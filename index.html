@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyCity Website Monitor</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f13; color: #e0e0e0; padding: 20px; }
+h1 { color: #fff; font-size: 1.5rem; margin-bottom: 4px; }
+.subtitle { color: #888; font-size: 0.85rem; margin-bottom: 20px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.stat-card { background: #1a1a24; border-radius: 8px; padding: 14px; }
+.stat-card h3 { color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.stat-card .value { color: #fff; font-size: 1.3rem; font-weight: 600; }
+.stat-card .sub { color: #666; font-size: 0.75rem; margin-top: 2px; }
+.site-section { margin-bottom: 20px; }
+.site-section h2 { color: #f0c040; font-size: 1rem; margin-bottom: 8px; }
+.change-item { background: #1a1a24; border-radius: 6px; padding: 10px 14px; margin-bottom: 6px; }
+.change-item .meta { display: flex; justify-content: space-between; color: #666; font-size: 0.7rem; margin-bottom: 4px; }
+.change-item .url { color: #4af; font-size: 0.8rem; word-break: break-all; }
+.change-item .detail { color: #ccc; font-size: 0.85rem; margin-top: 2px; }
+.tag-event { color: #4caf50; font-weight: 600; }
+.tag-content { color: #ff9800; }
+.tag-removed { color: #f44336; }
+.no-data { color: #555; font-style: italic; font-size: 0.85rem; }
+.footer { margin-top: 30px; color: #444; font-size: 0.7rem; text-align: center; }
+</style>
+</head>
+<body>
+<h1>🃏 SkyCity Monitor</h1>
+<p class="subtitle">Last updated: 2026-06-08 12:25 UTC — Total changes logged: 18</p>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <h3>Total Changes</h3>
+    <div class="value">18</div>
+  </div>
+  <div class="stat-card">
+    <h3>SkyCity Auckland</h3>
+    <div class="value">267</div>
+    <div class="sub">Pages tracked · Last check: 2026-06-08T12:25</div>
+  </div>
+  <div class="stat-card">
+    <h3>SkyCity Adelaide</h3>
+    <div class="value">204</div>
+    <div class="sub">Pages tracked · Last check: 2026-06-08T12:25</div>
+  </div>
+  <div class="stat-card">
+    <h3>SkyCity Entertainment Group</h3>
+    <div class="value">26</div>
+    <div class="sub">Pages tracked · Last check: 2026-06-08T12:25</div>
+  </div>
+</div>
+<h2 style="color:#888;font-size:0.8rem;margin-bottom:8px;">📊 Changes by Site</h2>
+<div style="font-size:0.8rem;color:#aaa;margin-bottom:2px;">SkyCity Auckland: <b>8</b> changes</div>
+<div style="font-size:0.8rem;color:#aaa;margin-bottom:2px;">SkyCity Adelaide: <b>8</b> changes</div>
+<div style="font-size:0.8rem;color:#aaa;margin-bottom:2px;">SkyCity Entertainment Group: <b>2</b> changes</div>
+
+<h2 style="color:#888;font-size:0.8rem;margin:16px 0 8px;">📋 Recent Changes</h2>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Entertainment Group</span><span>2026-06-08T12:25:49</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://skycityentertainmentgroup.com/news/" target="_blank" style="color:#4af;">https://skycityentertainmentgroup.com/news/</a></div>
+  <div class="detail">Page updated: /news/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T12:25:48</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/whats-on/content/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/whats-on/content/</a></div>
+  <div class="detail">Page updated: /whats-on/content/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T12:25:48</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/events-at-skycity/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/events-at-skycity/</a></div>
+  <div class="detail">Page updated: /events-at-skycity/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T12:25:47</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/offers/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/offers/</a></div>
+  <div class="detail">Page updated: /offers/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T12:25:47</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/whats-on/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/whats-on/</a></div>
+  <div class="detail">Page updated: /whats-on/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T12:25:44</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/whats-on/content/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/whats-on/content/</a></div>
+  <div class="detail">Page updated: /whats-on/content/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T12:25:43</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/theatre/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/theatre/</a></div>
+  <div class="detail">Page updated: /theatre/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T12:25:42</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/offers/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/offers/</a></div>
+  <div class="detail">Page updated: /offers/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T12:25:41</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/whats-on/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/whats-on/</a></div>
+  <div class="detail">Page updated: /whats-on/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Entertainment Group</span><span>2026-06-08T11:20:38</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://skycityentertainmentgroup.com/news/" target="_blank" style="color:#4af;">https://skycityentertainmentgroup.com/news/</a></div>
+  <div class="detail">Page updated: /news/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T11:20:38</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/whats-on/content/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/whats-on/content/</a></div>
+  <div class="detail">Page updated: /whats-on/content/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T11:20:37</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/events-at-skycity/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/events-at-skycity/</a></div>
+  <div class="detail">Page updated: /events-at-skycity/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T11:20:37</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/offers/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/offers/</a></div>
+  <div class="detail">Page updated: /offers/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Adelaide</span><span>2026-06-08T11:20:36</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityadelaide.com.au/whats-on/" target="_blank" style="color:#4af;">https://www.skycityadelaide.com.au/whats-on/</a></div>
+  <div class="detail">Page updated: /whats-on/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T11:20:33</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/whats-on/content/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/whats-on/content/</a></div>
+  <div class="detail">Page updated: /whats-on/content/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T11:20:32</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/theatre/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/theatre/</a></div>
+  <div class="detail">Page updated: /theatre/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T11:20:31</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/offers/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/offers/</a></div>
+  <div class="detail">Page updated: /offers/</div>
+</div>
+<div class="change-item">
+  <div class="meta"><span>SkyCity Auckland</span><span>2026-06-08T11:20:30</span></div>
+  <div class="url"><span class="tag-content">[Content Changed]</span> <a href="https://www.skycityauckland.co.nz/whats-on/" target="_blank" style="color:#4af;">https://www.skycityauckland.co.nz/whats-on/</a></div>
+  <div class="detail">Page updated: /whats-on/</div>
+</div>
+<div class="footer">
+  SkyCity Website Monitor — Powered by Hermes Agent
+</div>
+</body>
+</html>

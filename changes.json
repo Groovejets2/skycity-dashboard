@@ -1,0 +1,132 @@
+{
+  "updated": "2026-06-08 12:25 UTC",
+  "total": 18,
+  "changes": [
+    {
+      "site": "corporate",
+      "type": "content_changed",
+      "url": "https://skycityentertainmentgroup.com/news/",
+      "detail": "Page updated: /news/",
+      "detected_at": "2026-06-08T12:25:49.180115+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/content/",
+      "detail": "Page updated: /whats-on/content/",
+      "detected_at": "2026-06-08T12:25:48.755514+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
+      "detail": "Page updated: /events-at-skycity/",
+      "detected_at": "2026-06-08T12:25:48.193131+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/offers/",
+      "detail": "Page updated: /offers/",
+      "detected_at": "2026-06-08T12:25:47.619507+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/",
+      "detail": "Page updated: /whats-on/",
+      "detected_at": "2026-06-08T12:25:47.059130+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/content/",
+      "detail": "Page updated: /whats-on/content/",
+      "detected_at": "2026-06-08T12:25:44.778718+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/theatre/",
+      "detail": "Page updated: /theatre/",
+      "detected_at": "2026-06-08T12:25:43.785086+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "Page updated: /offers/",
+      "detected_at": "2026-06-08T12:25:42.733814+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/",
+      "detail": "Page updated: /whats-on/",
+      "detected_at": "2026-06-08T12:25:41.769682+00:00"
+    },
+    {
+      "site": "corporate",
+      "type": "content_changed",
+      "url": "https://skycityentertainmentgroup.com/news/",
+      "detail": "Page updated: /news/",
+      "detected_at": "2026-06-08T11:20:38.505668+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/content/",
+      "detail": "Page updated: /whats-on/content/",
+      "detected_at": "2026-06-08T11:20:38.115567+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
+      "detail": "Page updated: /events-at-skycity/",
+      "detected_at": "2026-06-08T11:20:37.605434+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/offers/",
+      "detail": "Page updated: /offers/",
+      "detected_at": "2026-06-08T11:20:37.103527+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/",
+      "detail": "Page updated: /whats-on/",
+      "detected_at": "2026-06-08T11:20:36.571764+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/content/",
+      "detail": "Page updated: /whats-on/content/",
+      "detected_at": "2026-06-08T11:20:33.287907+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/theatre/",
+      "detail": "Page updated: /theatre/",
+      "detected_at": "2026-06-08T11:20:32.288599+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "Page updated: /offers/",
+      "detected_at": "2026-06-08T11:20:31.315917+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/",
+      "detail": "Page updated: /whats-on/",
+      "detected_at": "2026-06-08T11:20:30.352318+00:00"
+    }
+  ]
+}
