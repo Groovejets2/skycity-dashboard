@@ -1,16 +1,16 @@
 {
-  "updated": "2026-06-08 12:25 UTC",
-  "total_changes": 18,
+  "updated": "2026-06-08 12:36 UTC",
+  "total_changes": 50,
   "sites": {
     "auckland": {
       "name": "SkyCity Auckland",
       "pages": 267,
-      "last_checked": "2026-06-08T12:25:40.832000+00:00"
+      "last_checked": "2026-06-08T12:35:40.116329+00:00"
     },
     "adelaide": {
       "name": "SkyCity Adelaide",
       "pages": 204,
-      "last_checked": "2026-06-08T12:25:46.524256+00:00"
+      "last_checked": "2026-06-08T12:36:48.056060+00:00"
     },
     "corporate": {
       "name": "SkyCity Entertainment Group",
