@@ -1,7 +1,49 @@
 {
-  "updated": "2026-06-09 09:18 UTC",
+  "updated": "2026-06-09 09:19 UTC",
   "total": 50,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
+      "detail": "Listing updated: /events-at-skycity/",
+      "detected_at": "2026-06-09T09:19:07.264268+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/offers/",
+      "detail": "Listing updated: /offers/",
+      "detected_at": "2026-06-09T09:19:06.692152+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/",
+      "detail": "Listing updated: /whats-on/",
+      "detected_at": "2026-06-09T09:19:06.145392+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/theatre/",
+      "detail": "Listing updated: /theatre/",
+      "detected_at": "2026-06-09T09:19:03.953870+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "Listing updated: /offers/",
+      "detected_at": "2026-06-09T09:19:02.990670+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/",
+      "detail": "Listing updated: /whats-on/",
+      "detected_at": "2026-06-09T09:19:01.997508+00:00"
+    },
     {
       "site": "adelaide",
       "type": "content_changed",
@@ -309,48 +351,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
       "detail": "Page updated: /whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
       "detected_at": "2026-06-09T07:13:11.581870+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detected_at": "2026-06-09T07:13:11.061230+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/december/",
-      "detail": "Page updated: /offers/ib/2023/december/",
-      "detected_at": "2026-06-09T07:13:10.518907+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/november/",
-      "detail": "Page updated: /offers/ib/2023/november/",
-      "detected_at": "2026-06-09T07:13:09.970649+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/october/",
-      "detail": "Page updated: /offers/ib/2023/october/",
-      "detected_at": "2026-06-09T07:13:09.448971+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/september/",
-      "detail": "Page updated: /offers/ib/2023/september/",
-      "detected_at": "2026-06-09T07:13:08.907839+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
-      "detail": "Page updated: /offers/ib/2023/july/",
-      "detected_at": "2026-06-09T07:13:08.385622+00:00"
     }
   ]
 }
