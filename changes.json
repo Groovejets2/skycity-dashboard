@@ -7,6 +7,48 @@
       "type": "content_changed",
       "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
       "detail": "Listing updated: /events-at-skycity/",
+      "detected_at": "2026-06-09T09:18:38.182051+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/offers/",
+      "detail": "Listing updated: /offers/",
+      "detected_at": "2026-06-09T09:18:37.671964+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/whats-on/",
+      "detail": "Listing updated: /whats-on/",
+      "detected_at": "2026-06-09T09:18:37.120461+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/theatre/",
+      "detail": "Listing updated: /theatre/",
+      "detected_at": "2026-06-09T09:18:34.849346+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "Listing updated: /offers/",
+      "detected_at": "2026-06-09T09:18:33.892985+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/whats-on/",
+      "detail": "Listing updated: /whats-on/",
+      "detected_at": "2026-06-09T09:18:32.922032+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
+      "detail": "Listing updated: /events-at-skycity/",
       "detected_at": "2026-06-09T09:18:14.633428+00:00"
     },
     {
@@ -309,48 +351,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
       "detail": "Page updated: /offers/ib/2023/july/",
       "detected_at": "2026-06-09T07:13:08.385622+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/june/",
-      "detail": "Page updated: /offers/ib/2023/june/",
-      "detected_at": "2026-06-09T07:13:07.870159+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/april-may/",
-      "detail": "Page updated: /offers/ib/2023/april-may/",
-      "detected_at": "2026-06-09T07:13:07.318644+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/february/",
-      "detail": "Page updated: /offers/ib/2023/february/",
-      "detected_at": "2026-06-09T07:13:06.786718+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/",
-      "detail": "Page updated: /offers/ib/2023/",
-      "detected_at": "2026-06-09T07:13:06.297170+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/test/",
-      "detail": "Page updated: /offers/ib/2022/test/",
-      "detected_at": "2026-06-09T07:13:05.756813+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/december/",
-      "detail": "Page updated: /offers/ib/2022/december/",
-      "detected_at": "2026-06-09T07:13:05.256230+00:00"
     }
   ]
 }
