@@ -1,356 +1,356 @@
 {
-  "updated": "2026-06-09 09:27 UTC",
+  "updated": "2026-06-09 09:58 UTC",
   "total": 50,
   "changes": [
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
-      "detail": "Page updated: /whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
-      "detected_at": "2026-06-09T09:27:08.900358+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands",
+      "detail": "Page updated: /whats-on/content/19512/9505/VIP-Thursday-Thousands",
+      "detected_at": "2026-06-09T09:58:06.672930+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detail": "Page updated: /whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detected_at": "2026-06-09T09:27:08.286691+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger",
+      "detail": "Page updated: /whats-on/content/19512/9502/Table-Trigger",
+      "detected_at": "2026-06-09T09:58:05.770726+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu",
-      "detail": "Page updated: /whats-on/content/22728/9614/Sunday-Set-Menu",
-      "detected_at": "2026-06-09T09:27:07.704024+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower",
+      "detail": "Page updated: /whats-on/content/19512/9394/Cash-Tower",
+      "detected_at": "2026-06-09T09:58:04.865417+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
-      "detail": "Page updated: /whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
-      "detected_at": "2026-06-09T09:27:07.102787+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays",
+      "detail": "Page updated: /whats-on/content/19512/8582/Super-Sundays",
+      "detected_at": "2026-06-09T09:58:03.939327+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-",
-      "detail": "Page updated: /whats-on/content/22728/9573/High-Society-",
-      "detected_at": "2026-06-09T09:27:06.442188+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
+      "detail": "Page updated: /whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
+      "detected_at": "2026-06-09T09:58:03.010411+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detail": "Page updated: /whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detected_at": "2026-06-09T09:27:05.808872+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/1385/Comedy-Zone",
+      "detail": "Page updated: /whats-on/content/19512/1385/Comedy-Zone",
+      "detected_at": "2026-06-09T09:58:02.092879+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
-      "detail": "Page updated: /whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
-      "detected_at": "2026-06-09T09:27:05.162607+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7622/Winter-Cocktails",
+      "detail": "Page updated: /whats-on/content/19512/7622/Winter-Cocktails",
+      "detected_at": "2026-06-09T09:58:01.134311+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
-      "detail": "Page updated: /whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
-      "detected_at": "2026-06-09T09:27:04.555528+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month",
+      "detail": "Page updated: /whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month",
+      "detected_at": "2026-06-09T09:58:00.234642+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9157/Yum-Cha-at-Huami-",
-      "detail": "Page updated: /whats-on/content/22728/9157/Yum-Cha-at-Huami-",
-      "detected_at": "2026-06-09T09:27:03.946082+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
+      "detail": "Page updated: /whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
+      "detected_at": "2026-06-09T09:57:59.325200+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8464/Bottomless-Booths",
-      "detail": "Page updated: /whats-on/content/22728/8464/Bottomless-Booths",
-      "detected_at": "2026-06-09T09:27:03.363173+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
+      "detail": "Page updated: /whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
+      "detected_at": "2026-06-09T09:57:58.434464+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
-      "detail": "Page updated: /whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
-      "detected_at": "2026-06-09T09:27:02.736015+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7155/Weekday-Happy-Hours",
+      "detail": "Page updated: /whats-on/content/19512/7155/Weekday-Happy-Hours",
+      "detected_at": "2026-06-09T09:57:57.534134+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
-      "detail": "Page updated: /whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
-      "detected_at": "2026-06-09T09:27:02.062968+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours",
+      "detail": "Page updated: /whats-on/content/19512/7159/Weekend-Happy-Hours",
+      "detected_at": "2026-06-09T09:57:56.620528+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8404/-15-Schnitzels-Sundays",
-      "detail": "Page updated: /whats-on/content/22728/8404/-15-Schnitzels-Sundays",
-      "detected_at": "2026-06-09T09:27:01.430871+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/2442/Live-Entertainment",
+      "detail": "Page updated: /whats-on/content/19512/2442/Live-Entertainment",
+      "detected_at": "2026-06-09T09:57:55.728656+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
-      "detail": "Page updated: /whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
-      "detected_at": "2026-06-09T09:27:00.818036+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/content/",
+      "detail": "Page updated: /whats-on/content/",
+      "detected_at": "2026-06-09T09:57:54.827344+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9455/2x1-fries-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/9455/2x1-fries-at-The-District",
-      "detected_at": "2026-06-09T09:27:00.208833+00:00"
+      "url": "https://skycityhamilton.co.nz/whats-on/",
+      "detail": "Page updated: /whats-on/",
+      "detected_at": "2026-06-09T09:57:53.872630+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8371/Up-late-and-Loud-DJS",
-      "detail": "Page updated: /whats-on/content/22728/8371/Up-late-and-Loud-DJS",
-      "detected_at": "2026-06-09T09:26:59.590022+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/palate-restaurant/",
+      "detail": "Page updated: /eat-drink/palate-restaurant/",
+      "detected_at": "2026-06-09T09:57:52.973281+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8359/Live-Bands-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/8359/Live-Bands-at-The-District",
-      "detected_at": "2026-06-09T09:26:58.943023+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/",
+      "detail": "Page updated: /eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/",
+      "detected_at": "2026-06-09T09:57:52.085533+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
-      "detected_at": "2026-06-09T09:26:58.311384+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/",
+      "detail": "Page updated: /eat-drink/amuse-bar-kitchen/",
+      "detected_at": "2026-06-09T09:57:51.164775+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
-      "detail": "Page updated: /whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
-      "detected_at": "2026-06-09T09:26:57.700630+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/christmas-at-bowl-social/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/christmas-at-bowl-social/",
+      "detected_at": "2026-06-09T09:57:50.265110+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
-      "detail": "Page updated: /whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
-      "detected_at": "2026-06-09T09:26:57.091535+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/colouring-pages-for-kids/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/colouring-pages-for-kids/",
+      "detected_at": "2026-06-09T09:57:49.329235+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
-      "detail": "Page updated: /whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
-      "detected_at": "2026-06-09T09:26:56.458384+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/virtual-tour/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/virtual-tour/",
+      "detected_at": "2026-06-09T09:57:48.424266+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
-      "detected_at": "2026-06-09T09:26:55.852544+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/birthday-packages/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/birthday-packages/",
+      "detected_at": "2026-06-09T09:57:47.509355+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
-      "detail": "Page updated: /whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
-      "detected_at": "2026-06-09T09:26:55.241774+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/group-packages/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/group-packages/",
+      "detected_at": "2026-06-09T09:57:46.606854+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
-      "detail": "Page updated: /whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
-      "detected_at": "2026-06-09T09:26:54.615817+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/book-online/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/book-online/",
+      "detected_at": "2026-06-09T09:57:45.692498+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4009/Bottomless-Brunch",
-      "detail": "Page updated: /whats-on/content/22728/4009/Bottomless-Brunch",
-      "detected_at": "2026-06-09T09:26:53.963455+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/",
+      "detail": "Page updated: /eat-drink/bowl-and-social/",
+      "detected_at": "2026-06-09T09:57:44.758099+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
-      "detail": "Page updated: /whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
-      "detected_at": "2026-06-09T09:26:53.362472+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/shanghai-restaurant/",
+      "detail": "Page updated: /eat-drink/shanghai-restaurant/",
+      "detected_at": "2026-06-09T09:57:43.854427+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4217/Happy-Hour",
-      "detail": "Page updated: /whats-on/content/22728/4217/Happy-Hour",
-      "detected_at": "2026-06-09T09:26:52.765952+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/number-eight-bar/bookings/",
+      "detail": "Page updated: /eat-drink/number-eight-bar/bookings/",
+      "detected_at": "2026-06-09T09:57:42.521589+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9421/Game-Day",
-      "detail": "Page updated: /whats-on/content/22728/9421/Game-Day",
-      "detected_at": "2026-06-09T09:26:52.135894+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/number-eight-bar/",
+      "detail": "Page updated: /eat-drink/number-eight-bar/",
+      "detected_at": "2026-06-09T09:57:41.606273+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot",
-      "detail": "Page updated: /whats-on/content/22728/9599/Thursday-Cash-Jackpot",
-      "detected_at": "2026-06-09T09:26:51.498024+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
+      "detected_at": "2026-06-09T09:57:40.646319+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
-      "detail": "Page updated: /whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
-      "detected_at": "2026-06-09T09:26:50.837281+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/",
+      "detected_at": "2026-06-09T09:57:39.751661+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
-      "detail": "Page updated: /whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
-      "detected_at": "2026-06-09T09:26:50.206040+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/virtual-tour/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/virtual-tour/",
+      "detected_at": "2026-06-09T09:57:38.775807+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
-      "detected_at": "2026-06-09T09:26:49.566906+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/group-bookings/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/group-bookings/",
+      "detected_at": "2026-06-09T09:57:37.858183+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detected_at": "2026-06-09T09:26:48.970560+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/bookings/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/bookings/",
+      "detected_at": "2026-06-09T09:57:36.957888+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/december/",
-      "detail": "Page updated: /offers/ib/2023/december/",
-      "detected_at": "2026-06-09T09:26:48.336661+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/",
+      "detail": "Page updated: /eat-drink/the-local-taphouse/",
+      "detected_at": "2026-06-09T09:57:36.035954+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/november/",
-      "detail": "Page updated: /offers/ib/2023/november/",
-      "detected_at": "2026-06-09T09:26:47.715271+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/bookings/",
+      "detail": "Page updated: /eat-drink/eat-burger/bookings/",
+      "detected_at": "2026-06-09T09:57:35.079212+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/october/",
-      "detail": "Page updated: /offers/ib/2023/october/",
-      "detected_at": "2026-06-09T09:26:47.084940+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/virtual-tour/",
+      "detail": "Page updated: /eat-drink/eat-burger/virtual-tour/",
+      "detected_at": "2026-06-09T09:57:34.183110+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/september/",
-      "detail": "Page updated: /offers/ib/2023/september/",
-      "detected_at": "2026-06-09T09:26:46.470240+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/",
+      "detail": "Page updated: /eat-drink/eat-burger/",
+      "detected_at": "2026-06-09T09:57:33.271105+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
-      "detail": "Page updated: /offers/ib/2023/july/",
-      "detected_at": "2026-06-09T09:26:45.851400+00:00"
+      "url": "https://skycityhamilton.co.nz/eat-drink/",
+      "detail": "Page updated: /eat-drink/",
+      "detected_at": "2026-06-09T09:57:32.282265+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "hamilton",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/june/",
-      "detail": "Page updated: /offers/ib/2023/june/",
-      "detected_at": "2026-06-09T09:26:45.215758+00:00"
+      "url": "https://skycityhamilton.co.nz/casino/whats-on/",
+      "detail": "Page updated: /casino/whats-on/",
+      "detected_at": "2026-06-09T09:57:31.365774+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/april-may/",
-      "detail": "Page updated: /offers/ib/2023/april-may/",
-      "detected_at": "2026-06-09T09:26:44.606640+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
+      "detail": "Page updated: /whats-on/content/20258/9560/Jingo-Night",
+      "detected_at": "2026-06-09T09:57:29.609819+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/february/",
-      "detail": "Page updated: /offers/ib/2023/february/",
-      "detected_at": "2026-06-09T09:26:43.974716+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9550/Share-Your-Views-on-Level-Two",
+      "detail": "Page updated: /whats-on/content/20258/9550/Share-Your-Views-on-Level-Two",
+      "detected_at": "2026-06-09T09:57:28.524895+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/",
-      "detail": "Page updated: /offers/ib/2023/",
-      "detected_at": "2026-06-09T09:26:43.331736+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
+      "detail": "Page updated: /whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
+      "detected_at": "2026-06-09T09:57:27.415988+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/test/",
-      "detail": "Page updated: /offers/ib/2022/test/",
-      "detected_at": "2026-06-09T09:26:42.701533+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/8707/Social-Hour-",
+      "detail": "Page updated: /whats-on/content/20258/8707/Social-Hour-",
+      "detected_at": "2026-06-09T09:57:26.260109+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/december/",
-      "detail": "Page updated: /offers/ib/2022/december/",
-      "detected_at": "2026-06-09T09:26:42.061984+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detail": "Page updated: /whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detected_at": "2026-06-09T09:57:25.245463+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/october/",
-      "detail": "Page updated: /offers/ib/2022/october/",
-      "detected_at": "2026-06-09T09:26:41.423256+00:00"
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "Page updated: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-06-09T09:57:24.210430+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/september/",
-      "detail": "Page updated: /offers/ib/2022/september/",
-      "detected_at": "2026-06-09T09:26:40.799559+00:00"
+      "url": "https://skycityqueenstown.co.nz/offers/show-by-skycity/",
+      "detail": "Page updated: /offers/show-by-skycity/",
+      "detected_at": "2026-06-09T09:57:23.137301+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/august/",
-      "detail": "Page updated: /offers/ib/2022/august/",
-      "detected_at": "2026-06-09T09:26:40.168094+00:00"
+      "url": "https://skycityqueenstown.co.nz/offers/members/",
+      "detail": "Page updated: /offers/members/",
+      "detected_at": "2026-06-09T09:57:22.110172+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/june/",
-      "detail": "Page updated: /offers/ib/2022/june/",
-      "detected_at": "2026-06-09T09:26:39.527835+00:00"
+      "url": "https://skycityqueenstown.co.nz/offers/restaurants/november-meal-deal/",
+      "detail": "Page updated: /offers/restaurants/november-meal-deal/",
+      "detected_at": "2026-06-09T09:57:21.043241+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/may/",
-      "detail": "Page updated: /offers/ib/2022/may/",
-      "detected_at": "2026-06-09T09:26:38.877542+00:00"
+      "url": "https://skycityqueenstown.co.nz/offers/restaurants/",
+      "detail": "Page updated: /offers/restaurants/",
+      "detected_at": "2026-06-09T09:57:19.899756+00:00"
     },
     {
-      "site": "adelaide",
+      "site": "queenstown",
       "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/april/",
-      "detail": "Page updated: /offers/ib/2022/april/",
-      "detected_at": "2026-06-09T09:26:38.237657+00:00"
+      "url": "https://skycityqueenstown.co.nz/offers/",
+      "detail": "Page updated: /offers/",
+      "detected_at": "2026-06-09T09:57:18.809996+00:00"
     }
   ]
 }
