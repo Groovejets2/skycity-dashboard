@@ -1,356 +1,356 @@
 {
-  "updated": "2026-06-09 09:20 UTC",
+  "updated": "2026-06-09 09:23 UTC",
   "total": 50,
   "changes": [
     {
       "site": "adelaide",
       "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Listing updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T09:20:04.386110+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:20:03.891809+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:20:03.348298+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/theatre/",
-      "detail": "Listing updated: /theatre/",
-      "detected_at": "2026-06-09T09:20:01.007662+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:20:00.077251+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:19:59.148451+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Listing updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T09:19:38.620729+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:19:38.080132+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:19:37.546636+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/theatre/",
-      "detail": "Listing updated: /theatre/",
-      "detected_at": "2026-06-09T09:19:31.300197+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:19:30.314636+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:19:29.322395+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Listing updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T09:19:07.264268+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:19:06.692152+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:19:06.145392+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/theatre/",
-      "detail": "Listing updated: /theatre/",
-      "detected_at": "2026-06-09T09:19:03.953870+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:19:02.990670+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:19:01.997508+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Listing updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T09:18:38.182051+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:18:37.671964+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:18:37.120461+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/theatre/",
-      "detail": "Listing updated: /theatre/",
-      "detected_at": "2026-06-09T09:18:34.849346+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:18:33.892985+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:18:32.922032+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Listing updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T09:18:14.633428+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:18:14.093668+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://www.skycityadelaide.com.au/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:18:13.559935+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/theatre/",
-      "detail": "Listing updated: /theatre/",
-      "detected_at": "2026-06-09T09:18:11.277588+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "Listing updated: /offers/",
-      "detected_at": "2026-06-09T09:18:10.339997+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/whats-on/",
-      "detail": "Listing updated: /whats-on/",
-      "detected_at": "2026-06-09T09:18:09.420949+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
       "detail": "Page updated: /whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
-      "detected_at": "2026-06-09T07:13:28.690007+00:00"
+      "detected_at": "2026-06-09T09:23:18.246192+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
       "detail": "Page updated: /whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detected_at": "2026-06-09T07:13:28.154904+00:00"
+      "detected_at": "2026-06-09T09:23:17.590671+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu",
       "detail": "Page updated: /whats-on/content/22728/9614/Sunday-Set-Menu",
-      "detected_at": "2026-06-09T07:13:27.635804+00:00"
+      "detected_at": "2026-06-09T09:23:16.993909+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
       "detail": "Page updated: /whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
-      "detected_at": "2026-06-09T07:13:27.095485+00:00"
+      "detected_at": "2026-06-09T09:23:16.361339+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-",
       "detail": "Page updated: /whats-on/content/22728/9573/High-Society-",
-      "detected_at": "2026-06-09T07:13:26.591552+00:00"
+      "detected_at": "2026-06-09T09:23:15.754770+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience",
       "detail": "Page updated: /whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detected_at": "2026-06-09T07:13:26.107162+00:00"
+      "detected_at": "2026-06-09T09:23:15.147247+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
       "detail": "Page updated: /whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
-      "detected_at": "2026-06-09T07:13:25.596550+00:00"
+      "detected_at": "2026-06-09T09:23:14.565374+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
       "detail": "Page updated: /whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
-      "detected_at": "2026-06-09T07:13:25.074260+00:00"
+      "detected_at": "2026-06-09T09:23:13.934005+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9157/Yum-Cha-at-Huami-",
       "detail": "Page updated: /whats-on/content/22728/9157/Yum-Cha-at-Huami-",
-      "detected_at": "2026-06-09T07:13:24.529612+00:00"
+      "detected_at": "2026-06-09T09:23:13.331533+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8464/Bottomless-Booths",
       "detail": "Page updated: /whats-on/content/22728/8464/Bottomless-Booths",
-      "detected_at": "2026-06-09T07:13:24.010115+00:00"
+      "detected_at": "2026-06-09T09:23:12.718337+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
       "detail": "Page updated: /whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
-      "detected_at": "2026-06-09T07:13:23.482747+00:00"
+      "detected_at": "2026-06-09T09:23:12.105582+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
       "detail": "Page updated: /whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
-      "detected_at": "2026-06-09T07:13:22.921503+00:00"
+      "detected_at": "2026-06-09T09:23:11.513652+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8404/-15-Schnitzels-Sundays",
       "detail": "Page updated: /whats-on/content/22728/8404/-15-Schnitzels-Sundays",
-      "detected_at": "2026-06-09T07:13:22.424700+00:00"
+      "detected_at": "2026-06-09T09:23:10.896396+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
       "detail": "Page updated: /whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
-      "detected_at": "2026-06-09T07:13:20.920220+00:00"
+      "detected_at": "2026-06-09T09:23:10.268537+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9455/2x1-fries-at-The-District",
       "detail": "Page updated: /whats-on/content/22728/9455/2x1-fries-at-The-District",
-      "detected_at": "2026-06-09T07:13:20.421119+00:00"
+      "detected_at": "2026-06-09T09:23:09.629513+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8371/Up-late-and-Loud-DJS",
       "detail": "Page updated: /whats-on/content/22728/8371/Up-late-and-Loud-DJS",
-      "detected_at": "2026-06-09T07:13:19.890523+00:00"
+      "detected_at": "2026-06-09T09:23:08.972162+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8359/Live-Bands-at-The-District",
       "detail": "Page updated: /whats-on/content/22728/8359/Live-Bands-at-The-District",
-      "detected_at": "2026-06-09T07:13:19.334311+00:00"
+      "detected_at": "2026-06-09T09:23:08.313213+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
       "detail": "Page updated: /whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
-      "detected_at": "2026-06-09T07:13:18.819329+00:00"
+      "detected_at": "2026-06-09T09:23:07.668559+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
       "detail": "Page updated: /whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
-      "detected_at": "2026-06-09T07:13:18.279141+00:00"
+      "detected_at": "2026-06-09T09:23:07.075689+00:00"
     },
     {
       "site": "adelaide",
       "type": "content_changed",
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
       "detail": "Page updated: /whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
-      "detected_at": "2026-06-09T07:13:17.774364+00:00"
+      "detected_at": "2026-06-09T09:23:06.453969+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
+      "detail": "Page updated: /whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
+      "detected_at": "2026-06-09T09:23:05.840045+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
+      "detail": "Page updated: /whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
+      "detected_at": "2026-06-09T09:23:05.223754+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
+      "detail": "Page updated: /whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
+      "detected_at": "2026-06-09T09:23:04.629477+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
+      "detail": "Page updated: /whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
+      "detected_at": "2026-06-09T09:23:04.020873+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4009/Bottomless-Brunch",
+      "detail": "Page updated: /whats-on/content/22728/4009/Bottomless-Brunch",
+      "detected_at": "2026-06-09T09:23:03.414015+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
+      "detail": "Page updated: /whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
+      "detected_at": "2026-06-09T09:23:02.798802+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4217/Happy-Hour",
+      "detail": "Page updated: /whats-on/content/22728/4217/Happy-Hour",
+      "detected_at": "2026-06-09T09:23:02.170763+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9421/Game-Day",
+      "detail": "Page updated: /whats-on/content/22728/9421/Game-Day",
+      "detected_at": "2026-06-09T09:23:01.523968+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot",
+      "detail": "Page updated: /whats-on/content/22728/9599/Thursday-Cash-Jackpot",
+      "detected_at": "2026-06-09T09:23:00.899664+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
+      "detail": "Page updated: /whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
+      "detected_at": "2026-06-09T09:23:00.243156+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
+      "detail": "Page updated: /whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
+      "detected_at": "2026-06-09T09:22:59.589776+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
+      "detail": "Page updated: /whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
+      "detected_at": "2026-06-09T09:22:58.990039+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
+      "detail": "Page updated: /whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
+      "detected_at": "2026-06-09T09:22:58.288526+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/december/",
+      "detail": "Page updated: /offers/ib/2023/december/",
+      "detected_at": "2026-06-09T09:22:57.671825+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/november/",
+      "detail": "Page updated: /offers/ib/2023/november/",
+      "detected_at": "2026-06-09T09:22:57.056389+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/october/",
+      "detail": "Page updated: /offers/ib/2023/october/",
+      "detected_at": "2026-06-09T09:22:56.422638+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/september/",
+      "detail": "Page updated: /offers/ib/2023/september/",
+      "detected_at": "2026-06-09T09:22:55.823335+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
+      "detail": "Page updated: /offers/ib/2023/july/",
+      "detected_at": "2026-06-09T09:22:55.207786+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/june/",
+      "detail": "Page updated: /offers/ib/2023/june/",
+      "detected_at": "2026-06-09T09:22:54.582550+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/april-may/",
+      "detail": "Page updated: /offers/ib/2023/april-may/",
+      "detected_at": "2026-06-09T09:22:53.967236+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/february/",
+      "detail": "Page updated: /offers/ib/2023/february/",
+      "detected_at": "2026-06-09T09:22:53.353068+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2023/",
+      "detail": "Page updated: /offers/ib/2023/",
+      "detected_at": "2026-06-09T09:22:52.740394+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/test/",
+      "detail": "Page updated: /offers/ib/2022/test/",
+      "detected_at": "2026-06-09T09:22:52.144173+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/december/",
+      "detail": "Page updated: /offers/ib/2022/december/",
+      "detected_at": "2026-06-09T09:22:51.501482+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/october/",
+      "detail": "Page updated: /offers/ib/2022/october/",
+      "detected_at": "2026-06-09T09:22:50.890552+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/september/",
+      "detail": "Page updated: /offers/ib/2022/september/",
+      "detected_at": "2026-06-09T09:22:50.270546+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/august/",
+      "detail": "Page updated: /offers/ib/2022/august/",
+      "detected_at": "2026-06-09T09:22:49.601398+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/june/",
+      "detail": "Page updated: /offers/ib/2022/june/",
+      "detected_at": "2026-06-09T09:22:48.970596+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/may/",
+      "detail": "Page updated: /offers/ib/2022/may/",
+      "detected_at": "2026-06-09T09:22:48.326792+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "content_changed",
+      "url": "https://skycityadelaide.com.au/offers/ib/2022/april/",
+      "detail": "Page updated: /offers/ib/2022/april/",
+      "detected_at": "2026-06-09T09:22:47.719041+00:00"
     }
   ]
 }
