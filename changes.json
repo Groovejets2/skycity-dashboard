@@ -1,7 +1,28 @@
 {
-  "updated": "2026-06-09 19:55 UTC",
+  "updated": "2026-06-10 04:30 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9635/School-Holiday-Getaway",
+      "detail": "New page added: /whats-on/content/1352/9635/School-Holiday-Getaway",
+      "detected_at": "2026-06-10T04:30:33.217389+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
+      "detail": "New page added: /whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
+      "detected_at": "2026-06-10T04:30:33.202523+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
+      "detail": "New page added: /whats-on/content/1352/9430/Burger-Hour",
+      "detected_at": "2026-06-10T04:30:33.186354+00:00"
+    },
     {
       "site": "hamilton",
       "type": "content_changed",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/grand-hotel/a-grand-retreat/",
       "detail": "Page updated: /offers/hotels/grand-hotel/a-grand-retreat/",
       "detected_at": "2026-06-09T10:37:22.872387+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/grand-hotel/grand-night-in/",
-      "detail": "Page updated: /offers/hotels/grand-hotel/grand-night-in/",
-      "detected_at": "2026-06-09T10:37:21.855205+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/grand-hotel/",
-      "detail": "Page updated: /offers/hotels/grand-hotel/",
-      "detected_at": "2026-06-09T10:37:20.818759+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/",
-      "detail": "Page updated: /offers/hotels/",
-      "detected_at": "2026-06-09T10:37:19.736463+00:00"
     }
   ]
 }
