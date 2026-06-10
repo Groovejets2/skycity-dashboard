@@ -2,1098 +2,2304 @@
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SkyCity Monitor Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;510;590&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f0f23;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:16px;font-size:16px;line-height:1.5}
-h1{font-size:clamp(20px,5vw,32px);margin-bottom:4px;color:#fff}
-.sub{color:#888;font-size:clamp(13px,3vw,16px);margin-bottom:16px}
-.card{background:#1a1a2e;border-radius:10px;padding:clamp(12px,3vw,20px);margin-bottom:14px}
-.card h2{font-size:clamp(13px,3vw,16px);color:#4fc3f7;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
-.site-card{padding:10px 14px;margin:6px 0;background:#16213e;border-radius:6px;font-size:clamp(13px,2.5vw,15px);display:flex;flex-wrap:wrap;gap:4px 12px}
-.site-card strong{min-width:fit-content}
-.site-card span{color:#888}
-
-.filter-bar{margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.filter-bar label{font-size:clamp(13px,2.5vw,15px);color:#aaa}
-.filter-bar select{background:#16213e;color:#e0e0e0;border:1px solid #333;border-radius:6px;padding:8px 12px;font-size:clamp(13px,2.5vw,15px);cursor:pointer;flex:1;max-width:300px}
-.filter-bar select:focus{outline:none;border-color:#4fc3f7}
-
-.change-item{padding:10px 14px;margin:5px 0;background:#16213e;border-radius:6px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;border-left:3px solid #555}
-.change-item a{color:#4fc3f7;text-decoration:none;word-break:break-all;font-size:clamp(12px,2.5vw,14px)}
-.change-item a:hover{text-decoration:underline}
-.change-item .ts{color:#666;font-size:clamp(11px,2vw,13px);margin-left:auto;white-space:nowrap}
-.change-item .icon-site{min-width:fit-content;font-size:clamp(12px,2.5vw,14px)}
-
+*{margin:0;padding:0;box-sizing:border-box;font-feature-settings:"cv01","ss03"}
+:root{
+  --bg-deep:#08090a;--bg-panel:#0f1011;--bg-surface:#191a1b;
+  --text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-muted:#62666d;
+  --accent:#5e6ad2;--accent-hover:#828fff;
+  --border:rgba(255,255,255,0.08);--border-subtle:rgba(255,255,255,0.05);
+  --radius:8px;--radius-sm:6px;
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+body{background:var(--bg-deep);color:var(--text-primary);font-family:var(--font);font-size:15px;line-height:1.5;padding:24px 16px;-webkit-font-smoothing:antialiased}
+.container{max-width:900px;margin:0 auto}
+.header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.header h1{font-size:clamp(24px,4vw,32px);font-weight:400;letter-spacing:-0.704px;color:var(--text-primary)}
+.header .sub{color:var(--text-tertiary);font-size:clamp(13px,2.5vw,15px);font-weight:400;letter-spacing:-0.165px}
+.section{background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--radius);padding:clamp(12px,3vw,20px);margin-bottom:14px}
+.section-title{font-size:13px;font-weight:510;color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px}
+.site-card{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--radius-sm);transition:background .15s}
+.site-card+.site-card{border-top:1px solid var(--border-subtle)}
+.site-card:hover{background:rgba(255,255,255,0.02)}
+.site-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.site-info{flex:1;min-width:0}
+.site-name{font-size:15px;font-weight:510;color:var(--text-primary);letter-spacing:-0.165px}
+.site-meta{font-size:13px;font-weight:400;color:var(--text-tertiary);letter-spacing:-0.13px}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.filter-bar label{font-size:13px;color:var(--text-tertiary);letter-spacing:-0.13px}
+.filter-bar select{background:var(--bg-surface);color:var(--text-primary);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;font-family:var(--font);font-size:14px;cursor:pointer;flex:1;max-width:280px}
+.filter-bar select:focus{outline:none;border-color:var(--accent)}
+.filter-count{font-size:13px;color:var(--text-muted);letter-spacing:-0.13px;white-space:nowrap}
+.change-row{display:flex;border-radius:var(--radius-sm);transition:background .15s}
+.change-row+.change-row{border-top:1px solid var(--border-subtle)}
+.change-row:hover{background:rgba(255,255,255,0.02)}
+.change-accent{width:3px;flex-shrink:0;background:var(--accent);border-radius:2px 0 0 2px;margin:8px 0}
+.change-body{flex:1;padding:10px 12px;min-width:0;display:flex;flex-direction:column;gap:3px}
+.change-header{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.change-icon{font-size:14px;line-height:1}
+.change-site{font-size:13px;font-weight:510;color:var(--text-secondary);letter-spacing:-0.13px}
+.change-ts{font-size:12px;font-weight:400;color:var(--text-muted);letter-spacing:-0.12px;margin-left:auto;white-space:nowrap}
+.change-link{font-size:14px;font-weight:400;color:var(--accent-hover);text-decoration:none;letter-spacing:-0.14px;word-break:break-word;transition:color .15s}
+.change-link:hover{color:#a5b0ff;text-decoration:underline}
 .hidden{display:none!important}
-a{text-decoration:none}
-a:hover{text-decoration:underline}
-.footer{text-align:center;color:#555;font-size:clamp(11px,2.5vw,13px);margin-top:20px}
-
-@media(max-width:600px){
-  body{padding:10px}
-  .change-item{gap:3px 8px}
-  .change-item .ts{margin-left:0;width:100%;text-align:right;font-size:11px}
-}
+.footer{text-align:center;color:var(--text-muted);font-size:13px;font-weight:400;letter-spacing:-0.13px;margin-top:20px}
+.footer a{color:var(--text-tertiary);text-decoration:none;margin:0 8px;transition:color .15s}
+.footer a:hover{color:var(--text-primary);text-decoration:underline}
+@media(max-width:600px){body{padding:12px 10px}.change-ts{margin-left:0;width:100%;text-align:right;font-size:11px}.change-link{font-size:13px}.filter-bar select{max-width:none}}
 </style></head><body>
-<h1>🃏 SkyCity Monitor</h1>
-<p class="sub">Updated 2026-06-10 07:45 UTC · 200 change(s) tracked</p>
-
-<div class="card"><h2>📡 Sites</h2>
-  <div class="site-card" style="border-left:4px solid #e74c3c">
-    <strong>SkyCity Auckland</strong>
-    <span>📄 272 pages · Last checked: 2026-06-10 07:00:28</span>
+<div class=container>
+<div class=header><h1>🃏 SkyCity Monitor</h1><span class=sub>2026-06-10 07:57 UTC · 200 change(s)</span></div>
+<div class=section><div class=section-title>Sites</div>
+  <div class="site-card" style="--accent:#e74c3c">
+    <div class="site-dot"></div>
+    <div class="site-info">
+      <div class="site-name">SkyCity Auckland</div>
+      <div class="site-meta">📄 272 pages · Last checked: 2026-06-10 07:00:28</div>
+    </div>
   </div>
-  <div class="site-card" style="border-left:4px solid #3498db">
-    <strong>SkyCity Adelaide</strong>
-    <span>📄 206 pages · Last checked: 2026-06-10 07:00:30</span>
+  <div class="site-card" style="--accent:#3498db">
+    <div class="site-dot"></div>
+    <div class="site-info">
+      <div class="site-name">SkyCity Adelaide</div>
+      <div class="site-meta">📄 206 pages · Last checked: 2026-06-10 07:00:30</div>
+    </div>
   </div>
-  <div class="site-card" style="border-left:4px solid #9b59b6">
-    <strong>SkyCity Queenstown</strong>
-    <span>📄 64 pages · Last checked: 2026-06-10 07:00:31</span>
+  <div class="site-card" style="--accent:#9b59b6">
+    <div class="site-dot"></div>
+    <div class="site-info">
+      <div class="site-name">SkyCity Queenstown</div>
+      <div class="site-meta">📄 64 pages · Last checked: 2026-06-10 07:00:31</div>
+    </div>
   </div>
-  <div class="site-card" style="border-left:4px solid #e67e22">
-    <strong>SkyCity Hamilton</strong>
-    <span>📄 115 pages · Last checked: 2026-06-10 07:00:32</span>
+  <div class="site-card" style="--accent:#e67e22">
+    <div class="site-dot"></div>
+    <div class="site-info">
+      <div class="site-name">SkyCity Hamilton</div>
+      <div class="site-meta">📄 115 pages · Last checked: 2026-06-10 07:00:32</div>
+    </div>
   </div>
-  <div class="site-card" style="border-left:4px solid #2ecc71">
-    <strong>SkyCity Entertainment Group</strong>
-    <span>📄 26 pages · Last checked: 2026-06-09 19:55:07</span>
+  <div class="site-card" style="--accent:#2ecc71">
+    <div class="site-dot"></div>
+    <div class="site-info">
+      <div class="site-name">SkyCity Entertainment Group</div>
+      <div class="site-meta">📄 26 pages · Last checked: 2026-06-09 19:55:07</div>
+    </div>
   </div></div>
-
-<div class="card">
-  <h2>📋 Recent Changes</h2>
-  <div class="filter-bar">
-    <label for="site-filter">Filter:</label>
-    <select id="site-filter" onchange="filterSite()">
-      <option value="all">All Sites</option>
-      <option value="auckland">SkyCity Auckland</option><option value="adelaide">SkyCity Adelaide</option><option value="queenstown">SkyCity Queenstown</option><option value="hamilton">SkyCity Hamilton</option><option value="corporate">SkyCity Entertainment Group</option>
-    </select>
-    <span id="change-count" style="color:#888;font-size:clamp(12px,2.5vw,14px)">200 changes</span>
-  </div>
-  <div id="changes-list">
-  <div class="change-item site-auckland">
-    <span>🆕 <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9635/School-Holiday-Getaway" target="_blank">School-Holiday-Getaway</a>
-    <span class="ts">2026-06-10 04:30:33</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>🆕 <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-" target="_blank">Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-</a>
-    <span class="ts">2026-06-10 04:30:33</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>🆕 <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour" target="_blank">Burger-Hour</a>
-    <span class="ts">2026-06-10 04:30:33</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands" target="_blank">VIP-Thursday-Thousands</a>
-    <span class="ts">2026-06-09 10:40:19</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger" target="_blank">Table-Trigger</a>
-    <span class="ts">2026-06-09 10:40:18</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower" target="_blank">Cash-Tower</a>
-    <span class="ts">2026-06-09 10:40:17</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays" target="_blank">Super-Sundays</a>
-    <span class="ts">2026-06-09 10:40:17</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/9385/New-Zealand-Darts-Showdown" target="_blank">New-Zealand-Darts-Showdown</a>
-    <span class="ts">2026-06-09 10:40:16</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/1385/Comedy-Zone" target="_blank">Comedy-Zone</a>
-    <span class="ts">2026-06-09 10:40:15</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/7622/Winter-Cocktails" target="_blank">Winter-Cocktails</a>
-    <span class="ts">2026-06-09 10:40:14</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month" target="_blank">June-Burger-and-Side-of-the-Month</a>
-    <span class="ts">2026-06-09 10:40:13</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/8174/Free-Coffee-at-Amuse-" target="_blank">Free-Coffee-at-Amuse-</a>
-    <span class="ts">2026-06-09 10:40:12</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse" target="_blank">Thursday-Quiz-at-The-Local-Taphouse</a>
-    <span class="ts">2026-06-09 10:40:11</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/7155/Weekday-Happy-Hours" target="_blank">Weekday-Happy-Hours</a>
-    <span class="ts">2026-06-09 10:40:10</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours" target="_blank">Weekend-Happy-Hours</a>
-    <span class="ts">2026-06-09 10:40:09</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/19512/2442/Live-Entertainment" target="_blank">Live-Entertainment</a>
-    <span class="ts">2026-06-09 10:40:08</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/content/" target="_blank">content</a>
-    <span class="ts">2026-06-09 10:40:07</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:40:06</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/palate-restaurant/" target="_blank">palate-restaurant</a>
-    <span class="ts">2026-06-09 10:40:05</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/" target="_blank">chill-grill-sip-into-summer-promotion</a>
-    <span class="ts">2026-06-09 10:40:04</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/" target="_blank">amuse-bar-kitchen</a>
-    <span class="ts">2026-06-09 10:40:04</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/christmas-at-bowl-social/" target="_blank">christmas-at-bowl-social</a>
-    <span class="ts">2026-06-09 10:40:03</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/colouring-pages-for-kids/" target="_blank">colouring-pages-for-kids</a>
-    <span class="ts">2026-06-09 10:40:02</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/virtual-tour/" target="_blank">virtual-tour</a>
-    <span class="ts">2026-06-09 10:40:01</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/birthday-packages/" target="_blank">birthday-packages</a>
-    <span class="ts">2026-06-09 10:40:00</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/group-packages/" target="_blank">group-packages</a>
-    <span class="ts">2026-06-09 10:39:59</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/book-online/" target="_blank">book-online</a>
-    <span class="ts">2026-06-09 10:39:58</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/" target="_blank">bowl-and-social</a>
-    <span class="ts">2026-06-09 10:39:57</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/shanghai-restaurant/" target="_blank">shanghai-restaurant</a>
-    <span class="ts">2026-06-09 10:39:56</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/number-eight-bar/bookings/" target="_blank">bookings</a>
-    <span class="ts">2026-06-09 10:39:55</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/number-eight-bar/" target="_blank">number-eight-bar</a>
-    <span class="ts">2026-06-09 10:39:54</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/" target="_blank">the-local-taphouse-urban-wine-walk-giveaway</a>
-    <span class="ts">2026-06-09 10:39:53</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/" target="_blank">the-local-taphouse-happy-hours</a>
-    <span class="ts">2026-06-09 10:39:52</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/virtual-tour/" target="_blank">virtual-tour</a>
-    <span class="ts">2026-06-09 10:39:51</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/group-bookings/" target="_blank">group-bookings</a>
-    <span class="ts">2026-06-09 10:39:50</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/bookings/" target="_blank">bookings</a>
-    <span class="ts">2026-06-09 10:39:50</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/" target="_blank">the-local-taphouse</a>
-    <span class="ts">2026-06-09 10:39:49</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/eat-burger/bookings/" target="_blank">bookings</a>
-    <span class="ts">2026-06-09 10:39:48</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/eat-burger/virtual-tour/" target="_blank">virtual-tour</a>
-    <span class="ts">2026-06-09 10:39:47</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/eat-burger/" target="_blank">eat-burger</a>
-    <span class="ts">2026-06-09 10:39:46</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/eat-drink/" target="_blank">eat-drink</a>
-    <span class="ts">2026-06-09 10:39:45</span>
-  </div>
-  <div class="change-item site-hamilton">
-    <span>✏️ <strong style="color:#e67e22">SkyCity Hamilton</strong></span>
-    <a href="https://skycityhamilton.co.nz/casino/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:39:44</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night" target="_blank">Jingo-Night</a>
-    <span class="ts">2026-06-09 10:39:42</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/9550/Share-Your-Views-on-Level-Two" target="_blank">Share-Your-Views-on-Level-Two</a>
-    <span class="ts">2026-06-09 10:39:41</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition" target="_blank">SkyCity-Stampede-Ticket-Competition</a>
-    <span class="ts">2026-06-09 10:39:40</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/8707/Social-Hour-" target="_blank">Social-Hour-</a>
-    <span class="ts">2026-06-09 10:39:39</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins" target="_blank">Stampede-Wins-SkyCity-Spins</a>
-    <span class="ts">2026-06-09 10:39:38</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour" target="_blank">Warm-Up-Hour</a>
-    <span class="ts">2026-06-09 10:39:37</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/offers/show-by-skycity/" target="_blank">show-by-skycity</a>
-    <span class="ts">2026-06-09 10:39:36</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/offers/members/" target="_blank">members</a>
-    <span class="ts">2026-06-09 10:39:35</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/offers/restaurants/november-meal-deal/" target="_blank">november-meal-deal</a>
-    <span class="ts">2026-06-09 10:39:34</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/offers/restaurants/" target="_blank">restaurants</a>
-    <span class="ts">2026-06-09 10:39:33</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/offers/" target="_blank">offers</a>
-    <span class="ts">2026-06-09 10:39:32</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/content/" target="_blank">content</a>
-    <span class="ts">2026-06-09 10:39:31</span>
-  </div>
-  <div class="change-item site-queenstown">
-    <span>✏️ <strong style="color:#9b59b6">SkyCity Queenstown</strong></span>
-    <a href="https://skycityqueenstown.co.nz/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:39:29</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR" target="_blank">SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR</a>
-    <span class="ts">2026-06-09 10:39:27</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-" target="_blank">SkyCity-Rewards-Snackables-</a>
-    <span class="ts">2026-06-09 10:39:26</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu" target="_blank">Sunday-Set-Menu</a>
-    <span class="ts">2026-06-09 10:39:25</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-" target="_blank">STATE-OF-ORIGIN-BLUES-vs--MAROONS-</a>
-    <span class="ts">2026-06-09 10:39:25</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-" target="_blank">High-Society-</a>
-    <span class="ts">2026-06-09 10:39:24</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience" target="_blank">The-Tomahawk-Experience</a>
-    <span class="ts">2026-06-09 10:39:23</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays" target="_blank">2-for-1-Lunch-Fridays</a>
-    <span class="ts">2026-06-09 10:39:23</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi" target="_blank">Pre-Theatre-Dining-at-Madame-Hanoi</a>
-    <span class="ts">2026-06-09 10:39:22</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9157/Yum-Cha-at-Huami-" target="_blank">Yum-Cha-at-Huami-</a>
-    <span class="ts">2026-06-09 10:39:22</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8464/Bottomless-Booths" target="_blank">Bottomless-Booths</a>
-    <span class="ts">2026-06-09 10:39:21</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special" target="_blank">iTL-On-The-Go---Lunch-Special</a>
-    <span class="ts">2026-06-09 10:39:20</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH" target="_blank">SOUTH-COAST-SUNDAY-SESH</a>
-    <span class="ts">2026-06-09 10:39:20</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8404/-15-Schnitzels-Sundays" target="_blank">-15-Schnitzels-Sundays</a>
-    <span class="ts">2026-06-09 10:39:19</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9459/-1-WINGS-THURSDAYS" target="_blank">-1-WINGS-THURSDAYS</a>
-    <span class="ts">2026-06-09 10:39:18</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9455/2x1-fries-at-The-District" target="_blank">2x1-fries-at-The-District</a>
-    <span class="ts">2026-06-09 10:39:18</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8371/Up-late-and-Loud-DJS" target="_blank">Up-late-and-Loud-DJS</a>
-    <span class="ts">2026-06-09 10:39:17</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8359/Live-Bands-at-The-District" target="_blank">Live-Bands-at-The-District</a>
-    <span class="ts">2026-06-09 10:39:17</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District" target="_blank">-25-BURGER---BEER---Saturdays-at-The-District</a>
-    <span class="ts">2026-06-09 10:39:16</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen" target="_blank">Pre-Show-Dining-at-The-Kitchen</a>
-    <span class="ts">2026-06-09 10:39:15</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen" target="_blank">Chef-s-Table-at-The-Kitchen</a>
-    <span class="ts">2026-06-09 10:39:15</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman" target="_blank">-25-Burgers-at-The-Guardsman</a>
-    <span class="ts">2026-06-09 10:39:14</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL" target="_blank">-25-Pasta-Tuesdays-at-iTL</a>
-    <span class="ts">2026-06-09 10:39:13</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman" target="_blank">-20-Pub-Classics-at-The-Guardsman</a>
-    <span class="ts">2026-06-09 10:39:13</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-" target="_blank">2-for-1-Schnitzel-at-The-Guardsman-</a>
-    <span class="ts">2026-06-09 10:39:12</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/4009/Bottomless-Brunch" target="_blank">Bottomless-Brunch</a>
-    <span class="ts">2026-06-09 10:39:11</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/3995/The-District-Poker-Freeze-Out" target="_blank">The-District-Poker-Freeze-Out</a>
-    <span class="ts">2026-06-09 10:39:11</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/4217/Happy-Hour" target="_blank">Happy-Hour</a>
-    <span class="ts">2026-06-09 10:39:10</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9421/Game-Day" target="_blank">Game-Day</a>
-    <span class="ts">2026-06-09 10:39:10</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot" target="_blank">Thursday-Cash-Jackpot</a>
-    <span class="ts">2026-06-09 10:39:09</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway" target="_blank">SkyCity-BMW-Giveaway</a>
-    <span class="ts">2026-06-09 10:39:08</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal" target="_blank">-Coffee---Cake--11-50-Deal</a>
-    <span class="ts">2026-06-09 10:39:08</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL" target="_blank">Pre-Theatre-Dining-at-iTL</a>
-    <span class="ts">2026-06-09 10:39:07</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL" target="_blank">Bottomless-Weekends-at-iTL</a>
-    <span class="ts">2026-06-09 10:39:06</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/december/" target="_blank">december</a>
-    <span class="ts">2026-06-09 10:39:06</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/november/" target="_blank">november</a>
-    <span class="ts">2026-06-09 10:39:05</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/october/" target="_blank">october</a>
-    <span class="ts">2026-06-09 10:39:04</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/september/" target="_blank">september</a>
-    <span class="ts">2026-06-09 10:39:04</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/july/" target="_blank">july</a>
-    <span class="ts">2026-06-09 10:39:03</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/june/" target="_blank">june</a>
-    <span class="ts">2026-06-09 10:39:03</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/april-may/" target="_blank">april-may</a>
-    <span class="ts">2026-06-09 10:39:02</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/february/" target="_blank">february</a>
-    <span class="ts">2026-06-09 10:39:01</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2023/" target="_blank">2023</a>
-    <span class="ts">2026-06-09 10:39:01</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/test/" target="_blank">test</a>
-    <span class="ts">2026-06-09 10:39:00</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/december/" target="_blank">december</a>
-    <span class="ts">2026-06-09 10:38:59</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/october/" target="_blank">october</a>
-    <span class="ts">2026-06-09 10:38:59</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/september/" target="_blank">september</a>
-    <span class="ts">2026-06-09 10:38:58</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/august/" target="_blank">august</a>
-    <span class="ts">2026-06-09 10:38:58</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/june/" target="_blank">june</a>
-    <span class="ts">2026-06-09 10:38:57</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/may/" target="_blank">may</a>
-    <span class="ts">2026-06-09 10:38:56</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/april/" target="_blank">april</a>
-    <span class="ts">2026-06-09 10:38:56</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/march/" target="_blank">march</a>
-    <span class="ts">2026-06-09 10:38:55</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/february/" target="_blank">february</a>
-    <span class="ts">2026-06-09 10:38:54</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/2022/" target="_blank">2022</a>
-    <span class="ts">2026-06-09 10:38:54</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/ib/" target="_blank">ib</a>
-    <span class="ts">2026-06-09 10:38:53</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/casino/" target="_blank">casino</a>
-    <span class="ts">2026-06-09 10:38:53</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/sport/" target="_blank">sport</a>
-    <span class="ts">2026-06-09 10:38:52</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/hotel/skycity-unlocked/" target="_blank">skycity-unlocked</a>
-    <span class="ts">2026-06-09 10:38:51</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/hotel/" target="_blank">hotel</a>
-    <span class="ts">2026-06-09 10:38:51</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/events/" target="_blank">events</a>
-    <span class="ts">2026-06-09 10:38:50</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/entertainment/" target="_blank">entertainment</a>
-    <span class="ts">2026-06-09 10:38:49</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/eat-and-drink/" target="_blank">eat-and-drink</a>
-    <span class="ts">2026-06-09 10:38:48</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/offers/" target="_blank">offers</a>
-    <span class="ts">2026-06-09 10:38:48</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/events-at-skycity/" target="_blank">events-at-skycity</a>
-    <span class="ts">2026-06-09 10:38:47</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/" target="_blank">state-of-origin-blues-vs-maroons</a>
-    <span class="ts">2026-06-09 10:38:46</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/" target="_blank">pirate-life-vip-trip-to-the-g</a>
-    <span class="ts">2026-06-09 10:38:46</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/schnitty4sam/" target="_blank">schnitty4sam</a>
-    <span class="ts">2026-06-09 10:38:45</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/soccer-world-cup/" target="_blank">soccer-world-cup</a>
-    <span class="ts">2026-06-09 10:38:44</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/champions-league-final/" target="_blank">champions-league-final</a>
-    <span class="ts">2026-06-09 10:38:43</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/1-wings-thursdays/" target="_blank">1-wings-thursdays</a>
-    <span class="ts">2026-06-09 10:38:42</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/2x1-fries-at-the-district/" target="_blank">2x1-fries-at-the-district</a>
-    <span class="ts">2026-06-09 10:38:42</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/fa-cup-final/" target="_blank">fa-cup-final</a>
-    <span class="ts">2026-06-09 10:38:41</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/25-burger-beer/" target="_blank">25-burger-beer</a>
-    <span class="ts">2026-06-09 10:38:41</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/" target="_blank">south-coast-sunday-sesh</a>
-    <span class="ts">2026-06-09 10:38:40</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/15-schnitzels-sundays/" target="_blank">15-schnitzels-sundays</a>
-    <span class="ts">2026-06-09 10:38:39</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/english-premier-league/" target="_blank">english-premier-league</a>
-    <span class="ts">2026-06-09 10:38:39</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/happy-hour/" target="_blank">happy-hour</a>
-    <span class="ts">2026-06-09 10:38:38</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:38:37</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/content/" target="_blank">content</a>
-    <span class="ts">2026-06-09 10:38:37</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:38:36</span>
-  </div>
-  <div class="change-item site-adelaide">
-    <span>✏️ <strong style="color:#3498db">SkyCity Adelaide</strong></span>
-    <a href="https://skycityadelaide.com.au/casino/whats-on/" target="_blank">whats-on</a>
-    <span class="ts">2026-06-09 10:38:36</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/8531/The-2-Johnnies" target="_blank">The-2-Johnnies</a>
-    <span class="ts">2026-06-09 10:38:33</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered" target="_blank">Matt-Matthew-Not-What-I-Ordered</a>
-    <span class="ts">2026-06-09 10:38:32</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9483/Xclusive-The-Show" target="_blank">Xclusive-The-Show</a>
-    <span class="ts">2026-06-09 10:38:31</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9433/Happy-Campers" target="_blank">Happy-Campers</a>
-    <span class="ts">2026-06-09 10:38:30</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9196/Thank-You-for-the-Music" target="_blank">Thank-You-for-the-Music</a>
-    <span class="ts">2026-06-09 10:38:29</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9557/Ballet-of-Lights--Cinderella-in-a-Sparkling-Show" target="_blank">Ballet-of-Lights--Cinderella-in-a-Sparkling-Show</a>
-    <span class="ts">2026-06-09 10:38:28</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9565/Jagged-Little-Pill--The-Musical" target="_blank">Jagged-Little-Pill--The-Musical</a>
-    <span class="ts">2026-06-09 10:38:26</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9487/Miss-Universe-New-Zealand" target="_blank">Miss-Universe-New-Zealand</a>
-    <span class="ts">2026-06-09 10:38:25</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour" target="_blank">STEVEN-HO---Not-Your-Hero-Comedy-Tour</a>
-    <span class="ts">2026-06-09 10:38:24</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know" target="_blank">Mo-Gilligan--The-Mo-You-Know</a>
-    <span class="ts">2026-06-09 10:38:23</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show" target="_blank">Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show</a>
-    <span class="ts">2026-06-09 10:38:22</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9440/Nate-Jackson-2026" target="_blank">Nate-Jackson-2026</a>
-    <span class="ts">2026-06-09 10:38:21</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9480/Beatlemania-On-Tour-2026" target="_blank">Beatlemania-On-Tour-2026</a>
-    <span class="ts">2026-06-09 10:38:20</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9423/Magic-Men-Australia-2026" target="_blank">Magic-Men-Australia-2026</a>
-    <span class="ts">2026-06-09 10:38:19</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9378/Kanan-Gill---Not-This-Again" target="_blank">Kanan-Gill---Not-This-Again</a>
-    <span class="ts">2026-06-09 10:38:18</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9141/Adam-Ray" target="_blank">Adam-Ray</a>
-    <span class="ts">2026-06-09 10:38:17</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity" target="_blank">Matariki-at-SkyCity</a>
-    <span class="ts">2026-06-09 10:38:16</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9601/In-The-Money" target="_blank">In-The-Money</a>
-    <span class="ts">2026-06-09 10:38:15</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower" target="_blank">Matariki-at-the-Sky-Tower</a>
-    <span class="ts">2026-06-09 10:38:14</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour" target="_blank">Gary-Owen---No-Hard-Feelings-Tour</a>
-    <span class="ts">2026-06-09 10:38:12</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE" target="_blank">SWEAT-WITH-PRIDE</a>
-    <span class="ts">2026-06-09 10:38:11</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9589/Cash---Cars" target="_blank">Cash---Cars</a>
-    <span class="ts">2026-06-09 10:38:10</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9519/Winter-Escapes" target="_blank">Winter-Escapes</a>
-    <span class="ts">2026-06-09 10:38:09</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9462/Sky-Tower-Family-Weekender" target="_blank">Sky-Tower-Family-Weekender</a>
-    <span class="ts">2026-06-09 10:38:08</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9438/Northern-Mystics-Super-Shot" target="_blank">Northern-Mystics-Super-Shot</a>
-    <span class="ts">2026-06-09 10:38:07</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/6656/Free-Car-Parking-" target="_blank">Free-Car-Parking-</a>
-    <span class="ts">2026-06-09 10:38:06</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9370/-9-90-Meal-Deals-for-SHOW-by-SkyCity-Members" target="_blank">-9-90-Meal-Deals-for-SHOW-by-SkyCity-Members</a>
-    <span class="ts">2026-06-09 10:38:05</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9339/Soar-above-the-city-with-the-new-Thrill-Coaster-VR-Experience" target="_blank">Soar-above-the-city-with-the-new-Thrill-Coaster-VR-Experience</a>
-    <span class="ts">2026-06-09 10:38:04</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/8149/MASU-Midweek-Lunch" target="_blank">MASU-Midweek-Lunch</a>
-    <span class="ts">2026-06-09 10:38:03</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9579/Delish" target="_blank">Delish</a>
-    <span class="ts">2026-06-09 10:38:02</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/3031/Live-Entertainment-at-Flare" target="_blank">Live-Entertainment-at-Flare</a>
-    <span class="ts">2026-06-09 10:38:00</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/8894/W-t--Workshop-Ultimate-Combo-Deal" target="_blank">W-t--Workshop-Ultimate-Combo-Deal</a>
-    <span class="ts">2026-06-09 10:37:59</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans" target="_blank">Home-of-the-Super-Fans</a>
-    <span class="ts">2026-06-09 10:37:58</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/5109/Live-Sport-at-Flare-Bar" target="_blank">Live-Sport-at-Flare-Bar</a>
-    <span class="ts">2026-06-09 10:37:57</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/4737/Live-Sport-at-Andy-s" target="_blank">Live-Sport-at-Andy-s</a>
-    <span class="ts">2026-06-09 10:37:56</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9362/Autumn-Poker-Tournaments" target="_blank">Autumn-Poker-Tournaments</a>
-    <span class="ts">2026-06-09 10:37:55</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/6645/POKER" target="_blank">POKER</a>
-    <span class="ts">2026-06-09 10:37:54</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/1437/Bingo" target="_blank">Bingo</a>
-    <span class="ts">2026-06-09 10:37:53</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/9264/-23-cocktails-at-Onyx-Bar" target="_blank">-23-cocktails-at-Onyx-Bar</a>
-    <span class="ts">2026-06-09 10:37:52</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/7309/Breakfast-at-SkyCity" target="_blank">Breakfast-at-SkyCity</a>
-    <span class="ts">2026-06-09 10:37:51</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/whats-on/content/1352/7041/Yum-Cha-at-Huami-" target="_blank">Yum-Cha-at-Huami-</a>
-    <span class="ts">2026-06-09 10:37:48</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/theatre/events/" target="_blank">events</a>
-    <span class="ts">2026-06-09 10:37:47</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/theatre/hiring-our-venue/" target="_blank">hiring-our-venue</a>
-    <span class="ts">2026-06-09 10:37:46</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/theatre/" target="_blank">theatre</a>
-    <span class="ts">2026-06-09 10:37:45</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/show-by-skycity/join-today-get-rewarded/" target="_blank">join-today-get-rewarded</a>
-    <span class="ts">2026-06-09 10:37:44</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/show-by-skycity/" target="_blank">show-by-skycity</a>
-    <span class="ts">2026-06-09 10:37:43</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/nzicc/" target="_blank">nzicc</a>
-    <span class="ts">2026-06-09 10:37:42</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/premier-rewards/" target="_blank">premier-rewards</a>
-    <span class="ts">2026-06-09 10:37:41</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/competitions/" target="_blank">competitions</a>
-    <span class="ts">2026-06-09 10:37:40</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/sponsorship/northern-mystics-super-shot/" target="_blank">northern-mystics-super-shot</a>
-    <span class="ts">2026-06-09 10:37:39</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/sponsorship/super-rugby-win-tickets/" target="_blank">super-rugby-win-tickets</a>
-    <span class="ts">2026-06-09 10:37:38</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/sponsorship/" target="_blank">sponsorship</a>
-    <span class="ts">2026-06-09 10:37:37</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/events/family-fun/" target="_blank">family-fun</a>
-    <span class="ts">2026-06-09 10:37:36</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/events/" target="_blank">events</a>
-    <span class="ts">2026-06-09 10:37:34</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/theatre/" target="_blank">theatre</a>
-    <span class="ts">2026-06-09 10:37:33</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/sport/" target="_blank">sport</a>
-    <span class="ts">2026-06-09 10:37:32</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/winter-escapes-1/" target="_blank">winter-escapes-1</a>
-    <span class="ts">2026-06-09 10:37:31</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/winter-escapes/" target="_blank">winter-escapes</a>
-    <span class="ts">2026-06-09 10:37:30</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/workspace-forms/" target="_blank">workspace-forms</a>
-    <span class="ts">2026-06-09 10:37:29</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/best-online-rate-guarantee/" target="_blank">best-online-rate-guarantee</a>
-    <span class="ts">2026-06-09 10:37:28</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/skycity-unlocked/" target="_blank">skycity-unlocked</a>
-    <span class="ts">2026-06-09 10:37:27</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/horizon-by-skycity/" target="_blank">horizon-by-skycity</a>
-    <span class="ts">2026-06-09 10:37:26</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/skycity-hotel/city-experience-package/" target="_blank">city-experience-package</a>
-    <span class="ts">2026-06-09 10:37:25</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/skycity-hotel/" target="_blank">skycity-hotel</a>
-    <span class="ts">2026-06-09 10:37:23</span>
-  </div>
-  <div class="change-item site-auckland">
-    <span>✏️ <strong style="color:#e74c3c">SkyCity Auckland</strong></span>
-    <a href="https://skycityauckland.co.nz/offers/hotels/grand-hotel/a-grand-retreat/" target="_blank">a-grand-retreat</a>
-    <span class="ts">2026-06-09 10:37:22</span>
+<div class=section>
+<div class=section-title>Recent Changes</div>
+<div class=filter-bar>
+<label for=sf>Filter:</label>
+<select id=sf onchange=filterSite()><option value=all>All Sites</option><option value="auckland">SkyCity Auckland</option><option value="adelaide">SkyCity Adelaide</option><option value="queenstown">SkyCity Queenstown</option><option value="hamilton">SkyCity Hamilton</option><option value="corporate">SkyCity Entertainment Group</option></select>
+<span class=filter-count id=cc>200 changes</span>
+</div>
+<div id=cl>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">🆕</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-10 04:30:33</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9635/School-Holiday-Getaway" target="_blank">School Holiday Getaway</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">🆕</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-10 04:30:33</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-" target="_blank">Matariki Bingo    1 000 MUST BE WON BINGO EVENT </a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">🆕</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-10 04:30:33</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour" target="_blank">Burger Hour</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:19</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands" target="_blank">VIP Thursday Thousands</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:18</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger" target="_blank">Table Trigger</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:17</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower" target="_blank">Cash Tower</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:17</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays" target="_blank">Super Sundays</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:16</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/9385/New-Zealand-Darts-Showdown" target="_blank">New Zealand Darts Showdown</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:15</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/1385/Comedy-Zone" target="_blank">Comedy Zone</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:14</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/7622/Winter-Cocktails" target="_blank">Winter Cocktails</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:13</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month" target="_blank">June Burger and Side of the Month</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:12</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/8174/Free-Coffee-at-Amuse-" target="_blank">Free Coffee at Amuse </a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:11</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse" target="_blank">Thursday Quiz at The Local Taphouse</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:10</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/7155/Weekday-Happy-Hours" target="_blank">Weekday Happy Hours</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:09</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours" target="_blank">Weekend Happy Hours</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:08</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/19512/2442/Live-Entertainment" target="_blank">Live Entertainment</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:07</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/content/" target="_blank">content</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:06</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:05</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/palate-restaurant/" target="_blank">palate restaurant</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:04</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/" target="_blank">chill grill sip into summer promotion</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:04</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/" target="_blank">amuse bar kitchen</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:03</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/christmas-at-bowl-social/" target="_blank">christmas at bowl social</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:02</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/colouring-pages-for-kids/" target="_blank">colouring pages for kids</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:01</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/virtual-tour/" target="_blank">virtual tour</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:40:00</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/birthday-packages/" target="_blank">birthday packages</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:59</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/group-packages/" target="_blank">group packages</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:58</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/book-online/" target="_blank">book online</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:57</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/bowl-and-social/" target="_blank">bowl and social</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:56</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/shanghai-restaurant/" target="_blank">shanghai restaurant</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:55</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/number-eight-bar/bookings/" target="_blank">bookings</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:54</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/number-eight-bar/" target="_blank">number eight bar</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:53</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/" target="_blank">the local taphouse urban wine walk giveaway</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:52</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/" target="_blank">the local taphouse happy hours</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:51</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/virtual-tour/" target="_blank">virtual tour</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:50</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/group-bookings/" target="_blank">group bookings</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:50</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/bookings/" target="_blank">bookings</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:49</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/" target="_blank">the local taphouse</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:48</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/eat-burger/bookings/" target="_blank">bookings</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:47</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/eat-burger/virtual-tour/" target="_blank">virtual tour</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:46</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/eat-burger/" target="_blank">eat burger</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:45</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/eat-drink/" target="_blank">eat drink</a>
+    </div>
+  </div>
+  <div class="change-row site-hamilton" style="--accent:#e67e22">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Hamilton</span>
+        <span class="change-ts">2026-06-09 10:39:44</span>
+      </div>
+      <a class="change-link" href="https://skycityhamilton.co.nz/casino/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:42</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night" target="_blank">Jingo Night</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:41</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/9550/Share-Your-Views-on-Level-Two" target="_blank">Share Your Views on Level Two</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:40</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition" target="_blank">SkyCity Stampede Ticket Competition</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:39</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/8707/Social-Hour-" target="_blank">Social Hour </a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:38</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins" target="_blank">Stampede Wins SkyCity Spins</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:37</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour" target="_blank">Warm Up Hour</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:36</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/offers/show-by-skycity/" target="_blank">show by skycity</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:35</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/offers/members/" target="_blank">members</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:34</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/offers/restaurants/november-meal-deal/" target="_blank">november meal deal</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:33</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/offers/restaurants/" target="_blank">restaurants</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:32</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/offers/" target="_blank">offers</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:31</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/content/" target="_blank">content</a>
+    </div>
+  </div>
+  <div class="change-row site-queenstown" style="--accent:#9b59b6">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Queenstown</span>
+        <span class="change-ts">2026-06-09 10:39:29</span>
+      </div>
+      <a class="change-link" href="https://skycityqueenstown.co.nz/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:27</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR" target="_blank">SOCCER WORLD CUP AT THE DISTRICT SPORTS BAR</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:26</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-" target="_blank">SkyCity Rewards Snackables </a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:25</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu" target="_blank">Sunday Set Menu</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:25</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-" target="_blank">STATE OF ORIGIN BLUES vs  MAROONS </a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:24</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-" target="_blank">High Society </a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:23</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience" target="_blank">The Tomahawk Experience</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:23</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays" target="_blank">2 for 1 Lunch Fridays</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:22</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi" target="_blank">Pre Theatre Dining at Madame Hanoi</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:22</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9157/Yum-Cha-at-Huami-" target="_blank">Yum Cha at Huami </a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:21</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8464/Bottomless-Booths" target="_blank">Bottomless Booths</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:20</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special" target="_blank">iTL On The Go   Lunch Special</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:20</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH" target="_blank">SOUTH COAST SUNDAY SESH</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:19</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8404/-15-Schnitzels-Sundays" target="_blank"> 15 Schnitzels Sundays</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:18</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9459/-1-WINGS-THURSDAYS" target="_blank"> 1 WINGS THURSDAYS</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:18</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9455/2x1-fries-at-The-District" target="_blank">2x1 fries at The District</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:17</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8371/Up-late-and-Loud-DJS" target="_blank">Up late and Loud DJS</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:17</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8359/Live-Bands-at-The-District" target="_blank">Live Bands at The District</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:16</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District" target="_blank"> 25 BURGER   BEER   Saturdays at The District</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:15</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen" target="_blank">Pre Show Dining at The Kitchen</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:15</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen" target="_blank">Chef s Table at The Kitchen</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:14</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman" target="_blank"> 25 Burgers at The Guardsman</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:13</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL" target="_blank"> 25 Pasta Tuesdays at iTL</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:13</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman" target="_blank"> 20 Pub Classics at The Guardsman</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:12</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-" target="_blank">2 for 1 Schnitzel at The Guardsman </a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:11</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/4009/Bottomless-Brunch" target="_blank">Bottomless Brunch</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:11</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/3995/The-District-Poker-Freeze-Out" target="_blank">The District Poker Freeze Out</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:10</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/4217/Happy-Hour" target="_blank">Happy Hour</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:10</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9421/Game-Day" target="_blank">Game Day</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:09</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot" target="_blank">Thursday Cash Jackpot</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:08</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway" target="_blank">SkyCity BMW Giveaway</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:08</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal" target="_blank"> Coffee   Cake  11 50 Deal</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:07</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL" target="_blank">Pre Theatre Dining at iTL</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:06</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL" target="_blank">Bottomless Weekends at iTL</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:06</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/december/" target="_blank">december</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:05</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/november/" target="_blank">november</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:04</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/october/" target="_blank">october</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:04</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/september/" target="_blank">september</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:03</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/july/" target="_blank">july</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:03</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/june/" target="_blank">june</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:02</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/april-may/" target="_blank">april may</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:01</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/february/" target="_blank">february</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:01</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2023/" target="_blank">2023</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:39:00</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/test/" target="_blank">test</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:59</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/december/" target="_blank">december</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:59</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/october/" target="_blank">october</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:58</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/september/" target="_blank">september</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:58</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/august/" target="_blank">august</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:57</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/june/" target="_blank">june</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:56</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/may/" target="_blank">may</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:56</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/april/" target="_blank">april</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:55</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/march/" target="_blank">march</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:54</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/february/" target="_blank">february</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:54</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/2022/" target="_blank">2022</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:53</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/ib/" target="_blank">ib</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:53</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/casino/" target="_blank">casino</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:52</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/sport/" target="_blank">sport</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:51</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/hotel/skycity-unlocked/" target="_blank">skycity unlocked</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:51</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/hotel/" target="_blank">hotel</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:50</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/events/" target="_blank">events</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:49</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/entertainment/" target="_blank">entertainment</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:48</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/eat-and-drink/" target="_blank">eat and drink</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:48</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/offers/" target="_blank">offers</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:47</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/events-at-skycity/" target="_blank">events at skycity</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:46</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/" target="_blank">state of origin blues vs maroons</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:46</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/" target="_blank">pirate life vip trip to the g</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:45</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/schnitty4sam/" target="_blank">schnitty4sam</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:44</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/soccer-world-cup/" target="_blank">soccer world cup</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:43</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/champions-league-final/" target="_blank">champions league final</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:42</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/1-wings-thursdays/" target="_blank">1 wings thursdays</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:42</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/2x1-fries-at-the-district/" target="_blank">2x1 fries at the district</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:41</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/fa-cup-final/" target="_blank">fa cup final</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:41</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/25-burger-beer/" target="_blank">25 burger beer</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:40</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/" target="_blank">south coast sunday sesh</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:39</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/15-schnitzels-sundays/" target="_blank">15 schnitzels sundays</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:39</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/english-premier-league/" target="_blank">english premier league</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:38</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/happy-hour/" target="_blank">happy hour</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:37</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:37</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/content/" target="_blank">content</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:36</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-adelaide" style="--accent:#3498db">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Adelaide</span>
+        <span class="change-ts">2026-06-09 10:38:36</span>
+      </div>
+      <a class="change-link" href="https://skycityadelaide.com.au/casino/whats-on/" target="_blank">whats on</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:33</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/8531/The-2-Johnnies" target="_blank">The 2 Johnnies</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:32</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered" target="_blank">Matt Matthew Not What I Ordered</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:31</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9483/Xclusive-The-Show" target="_blank">Xclusive The Show</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:30</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9433/Happy-Campers" target="_blank">Happy Campers</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:29</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9196/Thank-You-for-the-Music" target="_blank">Thank You for the Music</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:28</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9557/Ballet-of-Lights--Cinderella-in-a-Sparkling-Show" target="_blank">Ballet of Lights  Cinderella in a Sparkling Show</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:26</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9565/Jagged-Little-Pill--The-Musical" target="_blank">Jagged Little Pill  The Musical</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:25</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9487/Miss-Universe-New-Zealand" target="_blank">Miss Universe New Zealand</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:24</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour" target="_blank">STEVEN HO   Not Your Hero Comedy Tour</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:23</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know" target="_blank">Mo Gilligan  The Mo You Know</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:22</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show" target="_blank">Ballet of Lights  Sleeping Beauty in a Sparkling Show</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:21</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9440/Nate-Jackson-2026" target="_blank">Nate Jackson 2026</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:20</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9480/Beatlemania-On-Tour-2026" target="_blank">Beatlemania On Tour 2026</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:19</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9423/Magic-Men-Australia-2026" target="_blank">Magic Men Australia 2026</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:18</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9378/Kanan-Gill---Not-This-Again" target="_blank">Kanan Gill   Not This Again</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:17</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9141/Adam-Ray" target="_blank">Adam Ray</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:16</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity" target="_blank">Matariki at SkyCity</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:15</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9601/In-The-Money" target="_blank">In The Money</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:14</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower" target="_blank">Matariki at the Sky Tower</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:12</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour" target="_blank">Gary Owen   No Hard Feelings Tour</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:11</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE" target="_blank">SWEAT WITH PRIDE</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:10</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9589/Cash---Cars" target="_blank">Cash   Cars</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:09</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9519/Winter-Escapes" target="_blank">Winter Escapes</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:08</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9462/Sky-Tower-Family-Weekender" target="_blank">Sky Tower Family Weekender</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:07</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9438/Northern-Mystics-Super-Shot" target="_blank">Northern Mystics Super Shot</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:06</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/6656/Free-Car-Parking-" target="_blank">Free Car Parking </a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:05</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9370/-9-90-Meal-Deals-for-SHOW-by-SkyCity-Members" target="_blank"> 9 90 Meal Deals for SHOW by SkyCity Members</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:04</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9339/Soar-above-the-city-with-the-new-Thrill-Coaster-VR-Experience" target="_blank">Soar above the city with the new Thrill Coaster VR Experience</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:03</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/8149/MASU-Midweek-Lunch" target="_blank">MASU Midweek Lunch</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:02</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9579/Delish" target="_blank">Delish</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:38:00</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/3031/Live-Entertainment-at-Flare" target="_blank">Live Entertainment at Flare</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:59</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/8894/W-t--Workshop-Ultimate-Combo-Deal" target="_blank">W t  Workshop Ultimate Combo Deal</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:58</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans" target="_blank">Home of the Super Fans</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:57</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/5109/Live-Sport-at-Flare-Bar" target="_blank">Live Sport at Flare Bar</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:56</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/4737/Live-Sport-at-Andy-s" target="_blank">Live Sport at Andy s</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:55</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9362/Autumn-Poker-Tournaments" target="_blank">Autumn Poker Tournaments</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:54</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/6645/POKER" target="_blank">POKER</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:53</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/1437/Bingo" target="_blank">Bingo</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:52</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/9264/-23-cocktails-at-Onyx-Bar" target="_blank"> 23 cocktails at Onyx Bar</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:51</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/7309/Breakfast-at-SkyCity" target="_blank">Breakfast at SkyCity</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:48</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/whats-on/content/1352/7041/Yum-Cha-at-Huami-" target="_blank">Yum Cha at Huami </a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:47</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/theatre/events/" target="_blank">events</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:46</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/theatre/hiring-our-venue/" target="_blank">hiring our venue</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:45</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/theatre/" target="_blank">theatre</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:44</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/show-by-skycity/join-today-get-rewarded/" target="_blank">join today get rewarded</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:43</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/show-by-skycity/" target="_blank">show by skycity</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:42</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/nzicc/" target="_blank">nzicc</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:41</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/premier-rewards/" target="_blank">premier rewards</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:40</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/competitions/" target="_blank">competitions</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:39</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/sponsorship/northern-mystics-super-shot/" target="_blank">northern mystics super shot</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:38</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/sponsorship/super-rugby-win-tickets/" target="_blank">super rugby win tickets</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:37</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/sponsorship/" target="_blank">sponsorship</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:36</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/events/family-fun/" target="_blank">family fun</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:34</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/events/" target="_blank">events</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:33</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/theatre/" target="_blank">theatre</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:32</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/sport/" target="_blank">sport</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:31</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/winter-escapes-1/" target="_blank">winter escapes 1</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:30</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/winter-escapes/" target="_blank">winter escapes</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:29</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/workspace-forms/" target="_blank">workspace forms</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:28</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/best-online-rate-guarantee/" target="_blank">best online rate guarantee</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:27</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/skycity-unlocked/" target="_blank">skycity unlocked</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:26</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/horizon-by-skycity/" target="_blank">horizon by skycity</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:25</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/skycity-hotel/city-experience-package/" target="_blank">city experience package</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:23</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/skycity-hotel/" target="_blank">skycity hotel</a>
+    </div>
+  </div>
+  <div class="change-row site-auckland" style="--accent:#e74c3c">
+    <div class="change-accent"></div>
+    <div class="change-body">
+      <div class="change-header">
+        <span class="change-icon">✏️</span>
+        <span class="change-site">SkyCity Auckland</span>
+        <span class="change-ts">2026-06-09 10:37:22</span>
+      </div>
+      <a class="change-link" href="https://skycityauckland.co.nz/offers/hotels/grand-hotel/a-grand-retreat/" target="_blank">a grand retreat</a>
+    </div>
   </div></div>
 </div>
-
-<div style="text-align:center;margin-bottom:12px">
-  <a href="changes.json" style="color:#4fc3f7;margin:0 8px;font-size:clamp(12px,2.5vw,14px)">📄 changes.json</a>
-  <a href="stats.json" style="color:#4fc3f7;margin:0 8px;font-size:clamp(12px,2.5vw,14px)">📊 stats.json</a>
+<div class=footer><a href=changes.json>📄 changes.json</a> <a href=stats.json>📊 stats.json</a><br><span style=color:var(--text-muted)>Auto-updated daily</span></div>
 </div>
-
-<div class="footer">SkyCity Monitor · Auto-updated daily</div>
-
 <script>
-function filterSite() {
-  var val = document.getElementById('site-filter').value;
-  var items = document.querySelectorAll('.change-item');
-  var count = 0;
-  for (var i = 0; i < items.length; i++) {
-    if (val === 'all' || items[i].classList.contains('site-' + val)) {
-      items[i].classList.remove('hidden');
-      count++;
-    } else {
-      items[i].classList.add('hidden');
-    }
-  }
-  document.getElementById('change-count').textContent = count + ' change' + (count !== 1 ? 's' : '');
-}
+function filterSite(){var e=document.getElementById('sf'),v=e.value,items=document.querySelectorAll('.change-row'),c=0;for(var i=0;i<items.length;i++){if(v==='all'||items[i].classList.contains('site-'+v)){items[i].classList.remove('hidden');c++}else{items[i].classList.add('hidden')}}document.getElementById('cc').textContent=c+' change'+(c!==1?'s':'')}
 </script>
 </body></html>
