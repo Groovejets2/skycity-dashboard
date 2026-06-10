@@ -1,7 +1,14 @@
 {
-  "updated": "2026-06-10 07:57 UTC",
+  "updated": "2026-06-10 19:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
+      "detail": "Page removed: /whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
+      "detected_at": "2026-06-10T19:01:04.092609+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/skycity-hotel/",
       "detail": "Page updated: /offers/hotels/skycity-hotel/",
       "detected_at": "2026-06-09T10:37:23.953472+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/grand-hotel/a-grand-retreat/",
-      "detail": "Page updated: /offers/hotels/grand-hotel/a-grand-retreat/",
-      "detected_at": "2026-06-09T10:37:22.872387+00:00"
     }
   ]
 }
