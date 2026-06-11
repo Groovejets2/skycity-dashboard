@@ -1,7 +1,14 @@
 {
-  "updated": "2026-06-11 07:00 UTC",
+  "updated": "2026-06-11 12:42 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
+      "detail": "Page removed: /whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
+      "detected_at": "2026-06-11T12:39:33.231679+00:00"
+    },
     {
       "site": "auckland",
       "type": "content_changed",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/horizon-by-skycity/",
       "detail": "Page updated: /offers/hotels/horizon-by-skycity/",
       "detected_at": "2026-06-09T10:37:26.154139+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/skycity-hotel/city-experience-package/",
-      "detail": "Page updated: /offers/hotels/skycity-hotel/city-experience-package/",
-      "detected_at": "2026-06-09T10:37:25.089919+00:00"
     }
   ]
 }
