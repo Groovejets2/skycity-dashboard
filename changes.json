@@ -1,7 +1,14 @@
 {
-  "updated": "2026-06-11 19:01 UTC",
+  "updated": "2026-06-11 23:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9638/Rick-Beato-Live",
+      "detail": "New page added: /whats-on/content/1352/9638/Rick-Beato-Live",
+      "detected_at": "2026-06-11T23:01:11.500069+00:00"
+    },
     {
       "site": "auckland",
       "type": "removed_page",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/skycity-unlocked/",
       "detail": "Page updated: /offers/hotels/skycity-unlocked/",
       "detected_at": "2026-06-09T10:37:27.310010+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/horizon-by-skycity/",
-      "detail": "Page updated: /offers/hotels/horizon-by-skycity/",
-      "detected_at": "2026-06-09T10:37:26.154139+00:00"
     }
   ]
 }
