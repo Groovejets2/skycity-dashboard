@@ -1,7 +1,14 @@
 {
-  "updated": "2026-06-10 23:00 UTC",
+  "updated": "2026-06-11 03:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "content_changed",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-06-11T03:01:03.100632+00:00"
+    },
     {
       "site": "auckland",
       "type": "removed_page",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/skycity-hotel/city-experience-package/",
       "detail": "Page updated: /offers/hotels/skycity-hotel/city-experience-package/",
       "detected_at": "2026-06-09T10:37:25.089919+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/skycity-hotel/",
-      "detail": "Page updated: /offers/hotels/skycity-hotel/",
-      "detected_at": "2026-06-09T10:37:23.953472+00:00"
     }
   ]
 }
