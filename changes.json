@@ -1,7 +1,21 @@
 {
-  "updated": "2026-06-12 07:01 UTC",
+  "updated": "2026-06-12 19:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/1385/Comedy-Zone",
+      "detail": "Page removed: /whats-on/content/19512/1385/Comedy-Zone",
+      "detected_at": "2026-06-12T19:01:06.723451+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
+      "detail": "Page removed: /whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
+      "detected_at": "2026-06-12T19:01:00.519005+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1387,20 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/winter-escapes/",
       "detail": "Page updated: /offers/hotels/winter-escapes/",
       "detected_at": "2026-06-09T10:37:30.573594+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/workspace-forms/",
-      "detail": "Page updated: /offers/hotels/workspace-forms/",
-      "detected_at": "2026-06-09T10:37:29.474895+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/best-online-rate-guarantee/",
-      "detail": "Page updated: /offers/hotels/best-online-rate-guarantee/",
-      "detected_at": "2026-06-09T10:37:28.401540+00:00"
     }
   ]
 }
