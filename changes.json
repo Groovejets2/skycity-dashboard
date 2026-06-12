@@ -1,7 +1,14 @@
 {
-  "updated": "2026-06-11 23:01 UTC",
+  "updated": "2026-06-12 03:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9642/Football-World-Cup",
+      "detail": "New page added: /whats-on/content/1352/9642/Football-World-Cup",
+      "detected_at": "2026-06-12T03:00:39.250312+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/hotels/best-online-rate-guarantee/",
       "detail": "Page updated: /offers/hotels/best-online-rate-guarantee/",
       "detected_at": "2026-06-09T10:37:28.401540+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/hotels/skycity-unlocked/",
-      "detail": "Page updated: /offers/hotels/skycity-unlocked/",
-      "detected_at": "2026-06-09T10:37:27.310010+00:00"
     }
   ]
 }
