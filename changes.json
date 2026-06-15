@@ -1,7 +1,21 @@
 {
-  "updated": "2026-06-15 03:00 UTC",
+  "updated": "2026-06-15 07:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
+      "detail": "New page added: /whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
+      "detected_at": "2026-06-15T07:00:22.247489+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9646/Fire---Feast",
+      "detail": "New page added: /whats-on/content/22728/9646/Fire---Feast",
+      "detected_at": "2026-06-15T07:00:17.910135+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1387,20 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/events/",
       "detail": "Page updated: /offers/events/",
       "detected_at": "2026-06-09T10:37:34.988448+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/theatre/",
-      "detail": "Page updated: /offers/theatre/",
-      "detected_at": "2026-06-09T10:37:33.833667+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/sport/",
-      "detail": "Page updated: /offers/sport/",
-      "detected_at": "2026-06-09T10:37:32.766194+00:00"
     }
   ]
 }
