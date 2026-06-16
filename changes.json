@@ -1,7 +1,28 @@
 {
-  "updated": "2026-06-15 23:00 UTC",
+  "updated": "2026-06-16 03:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
+      "detail": "Page removed: /whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
+      "detected_at": "2026-06-16T03:00:34.915342+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/",
+      "detected_at": "2026-06-16T03:00:34.899494+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9657/Taylor-Tribute-Show",
+      "detail": "New page added: /whats-on/content/1352/9657/Taylor-Tribute-Show",
+      "detected_at": "2026-06-16T03:00:31.714884+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityauckland.co.nz/offers/competitions/",
       "detail": "Page updated: /offers/competitions/",
       "detected_at": "2026-06-09T10:37:40.309574+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/sponsorship/northern-mystics-super-shot/",
-      "detail": "Page updated: /offers/sponsorship/northern-mystics-super-shot/",
-      "detected_at": "2026-06-09T10:37:39.279276+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/sponsorship/super-rugby-win-tickets/",
-      "detail": "Page updated: /offers/sponsorship/super-rugby-win-tickets/",
-      "detected_at": "2026-06-09T10:37:38.239741+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/sponsorship/",
-      "detail": "Page updated: /offers/sponsorship/",
-      "detected_at": "2026-06-09T10:37:37.085038+00:00"
     }
   ]
 }
