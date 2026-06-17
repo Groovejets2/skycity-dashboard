@@ -1,7 +1,56 @@
 {
-  "updated": "2026-06-16 21:00 UTC",
+  "updated": "2026-06-17 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
+      "detail": "New page added: /whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
+      "detected_at": "2026-06-17T21:00:39.311469+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay-World-Cup---Live-at-The-District-Sports-Bar",
+      "detail": "New page added: /whats-on/content/22728/9670/Australia-v-Paraguay-World-Cup---Live-at-The-District-Sports-Bar",
+      "detected_at": "2026-06-17T21:00:35.159111+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9666/Australia-v-USA-World-Cup---Live-at-The-District-Sports-Bar",
+      "detail": "New page added: /whats-on/content/22728/9666/Australia-v-USA-World-Cup---Live-at-The-District-Sports-Bar",
+      "detected_at": "2026-06-17T21:00:35.146226+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9631/Adelaide-s-Home-of-UFC",
+      "detail": "New page added: /whats-on/content/22728/9631/Adelaide-s-Home-of-UFC",
+      "detected_at": "2026-06-17T21:00:35.133349+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-world-cup-games/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/australia-world-cup-games/",
+      "detected_at": "2026-06-17T21:00:35.119969+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/adelaides-home-of-ufc/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/adelaides-home-of-ufc/",
+      "detected_at": "2026-06-17T21:00:35.099442+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "offers_updated",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-06-17T21:00:27.650370+00:00"
+    },
     {
       "site": "adelaide",
       "type": "new_page",
@@ -1352,55 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/7309/Breakfast-at-SkyCity",
       "detail": "Page updated: /whats-on/content/1352/7309/Breakfast-at-SkyCity",
       "detected_at": "2026-06-09T10:37:51.003192+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/7041/Yum-Cha-at-Huami-",
-      "detail": "Page updated: /whats-on/content/1352/7041/Yum-Cha-at-Huami-",
-      "detected_at": "2026-06-09T10:37:48.964248+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/theatre/events/",
-      "detail": "Page updated: /theatre/events/",
-      "detected_at": "2026-06-09T10:37:47.802434+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/theatre/hiring-our-venue/",
-      "detail": "Page updated: /theatre/hiring-our-venue/",
-      "detected_at": "2026-06-09T10:37:46.731599+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/theatre/",
-      "detail": "Page updated: /theatre/",
-      "detected_at": "2026-06-09T10:37:45.669537+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/show-by-skycity/join-today-get-rewarded/",
-      "detail": "Page updated: /offers/show-by-skycity/join-today-get-rewarded/",
-      "detected_at": "2026-06-09T10:37:44.589860+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/show-by-skycity/",
-      "detail": "Page updated: /offers/show-by-skycity/",
-      "detected_at": "2026-06-09T10:37:43.469291+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/offers/nzicc/",
-      "detail": "Page updated: /offers/nzicc/",
-      "detected_at": "2026-06-09T10:37:42.412910+00:00"
     }
   ]
 }
