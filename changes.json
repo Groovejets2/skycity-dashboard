@@ -1,7 +1,28 @@
 {
-  "updated": "2026-06-17 21:00 UTC",
+  "updated": "2026-06-18 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
+      "detail": "New page added: /whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
+      "detected_at": "2026-06-18T21:00:50.322816+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans",
+      "detail": "Page removed: /whats-on/content/1352/9239/Home-of-the-Super-Fans",
+      "detected_at": "2026-06-18T21:00:43.287193+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Super-Rugby-Grand-Final",
+      "detail": "New page added: /whats-on/content/1352/9239/Super-Rugby-Grand-Final",
+      "detected_at": "2026-06-18T21:00:43.262574+00:00"
+    },
     {
       "site": "hamilton",
       "type": "new_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/6645/POKER",
       "detail": "Page updated: /whats-on/content/1352/6645/POKER",
       "detected_at": "2026-06-09T10:37:54.136942+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/1437/Bingo",
-      "detail": "Page updated: /whats-on/content/1352/1437/Bingo",
-      "detected_at": "2026-06-09T10:37:53.119610+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9264/-23-cocktails-at-Onyx-Bar",
-      "detail": "Page updated: /whats-on/content/1352/9264/-23-cocktails-at-Onyx-Bar",
-      "detected_at": "2026-06-09T10:37:52.024940+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/7309/Breakfast-at-SkyCity",
-      "detail": "Page updated: /whats-on/content/1352/7309/Breakfast-at-SkyCity",
-      "detected_at": "2026-06-09T10:37:51.003192+00:00"
     }
   ]
 }
