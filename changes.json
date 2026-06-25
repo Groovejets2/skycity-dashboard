@@ -1,7 +1,42 @@
 {
-  "updated": "2026-06-24 21:01 UTC",
+  "updated": "2026-06-25 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands",
+      "detail": "Page removed: /whats-on/content/19512/9505/VIP-Thursday-Thousands",
+      "detected_at": "2026-06-25T21:00:19.806720+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
+      "detail": "Page removed: /whats-on/content/20258/9560/Jingo-Night",
+      "detected_at": "2026-06-25T21:00:18.864184+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/hotels/hotels-by-skycity/",
+      "detail": "Page removed: /hotels/hotels-by-skycity/",
+      "detected_at": "2026-06-25T21:00:13.888855+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
+      "detail": "New page added: /whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
+      "detected_at": "2026-06-25T21:00:13.867889+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9675/The-Sweet-Caroline-Tour--A-Tribute-to-Neil-Diamond",
+      "detail": "New page added: /whats-on/content/1352/9675/The-Sweet-Caroline-Tour--A-Tribute-to-Neil-Diamond",
+      "detected_at": "2026-06-25T21:00:13.851878+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1366,41 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
       "detail": "Page updated: /whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
       "detected_at": "2026-06-09T10:38:11.777040+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9589/Cash---Cars",
-      "detail": "Page updated: /whats-on/content/1352/9589/Cash---Cars",
-      "detected_at": "2026-06-09T10:38:10.629380+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9519/Winter-Escapes",
-      "detail": "Page updated: /whats-on/content/1352/9519/Winter-Escapes",
-      "detected_at": "2026-06-09T10:38:09.576229+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
-      "detail": "Page updated: /whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
-      "detected_at": "2026-06-09T10:38:08.531899+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9438/Northern-Mystics-Super-Shot",
-      "detail": "Page updated: /whats-on/content/1352/9438/Northern-Mystics-Super-Shot",
-      "detected_at": "2026-06-09T10:38:07.453028+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/6656/Free-Car-Parking-",
-      "detail": "Page updated: /whats-on/content/1352/6656/Free-Car-Parking-",
-      "detected_at": "2026-06-09T10:38:06.314251+00:00"
     }
   ]
 }
