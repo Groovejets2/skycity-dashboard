@@ -1,7 +1,49 @@
 {
-  "updated": "2026-06-25 21:00 UTC",
+  "updated": "2026-06-28 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9680/Bars-and-casual-drinks-at-SkyCity",
+      "detail": "New page added: /whats-on/content/1352/9680/Bars-and-casual-drinks-at-SkyCity",
+      "detected_at": "2026-06-28T21:00:53.653704+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger",
+      "detail": "Page removed: /whats-on/content/19512/9502/Table-Trigger",
+      "detected_at": "2026-06-28T20:01:01.591894+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower",
+      "detail": "Page removed: /whats-on/content/19512/9394/Cash-Tower",
+      "detected_at": "2026-06-28T20:01:01.568437+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
+      "detail": "Page removed: /whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
+      "detected_at": "2026-06-28T20:00:51.959454+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9362/Autumn-Poker-Tournaments",
+      "detail": "Page removed: /whats-on/content/1352/9362/Autumn-Poker-Tournaments",
+      "detected_at": "2026-06-28T20:00:51.944308+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9141/Adam-Ray",
+      "detail": "Page removed: /whats-on/content/1352/9141/Adam-Ray",
+      "detected_at": "2026-06-28T20:00:51.921919+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1359,48 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
       "detail": "Page updated: /whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
       "detected_at": "2026-06-09T10:38:18.320831+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9141/Adam-Ray",
-      "detail": "Page updated: /whats-on/content/1352/9141/Adam-Ray",
-      "detected_at": "2026-06-09T10:38:17.250985+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity",
-      "detail": "Page updated: /whats-on/content/1352/9596/Matariki-at-SkyCity",
-      "detected_at": "2026-06-09T10:38:16.184413+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9601/In-The-Money",
-      "detail": "Page updated: /whats-on/content/1352/9601/In-The-Money",
-      "detected_at": "2026-06-09T10:38:15.101940+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
-      "detail": "Page updated: /whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
-      "detected_at": "2026-06-09T10:38:14.008935+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
-      "detail": "Page updated: /whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
-      "detected_at": "2026-06-09T10:38:12.869498+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
-      "detail": "Page updated: /whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
-      "detected_at": "2026-06-09T10:38:11.777040+00:00"
     }
   ]
 }
