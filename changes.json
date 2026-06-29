@@ -1,7 +1,98 @@
 {
-  "updated": "2026-06-28 21:01 UTC",
+  "updated": "2026-06-29 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays",
+      "detail": "Page removed: /whats-on/content/19512/8582/Super-Sundays",
+      "detected_at": "2026-06-29T21:01:45.790846+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours",
+      "detail": "Page removed: /whats-on/content/19512/7159/Weekend-Happy-Hours",
+      "detected_at": "2026-06-29T21:01:45.778218+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
+      "detail": "Page removed: /eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
+      "detected_at": "2026-06-29T21:01:45.765410+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9703/-20-Sunday-Roast",
+      "detail": "New page added: /whats-on/content/19512/9703/-20-Sunday-Roast",
+      "detected_at": "2026-06-29T21:01:45.752701+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9702/Blackjack-Tournament",
+      "detail": "New page added: /whats-on/content/19512/9702/Blackjack-Tournament",
+      "detected_at": "2026-06-29T21:01:45.740111+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9701/Money-or-the-Bag",
+      "detail": "New page added: /whats-on/content/19512/9701/Money-or-the-Bag",
+      "detected_at": "2026-06-29T21:01:45.726402+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9700/VIP-Mystery-Money",
+      "detail": "New page added: /whats-on/content/19512/9700/VIP-Mystery-Money",
+      "detected_at": "2026-06-29T21:01:45.712637+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Saturday-Happy-Hours",
+      "detail": "New page added: /whats-on/content/19512/7159/Saturday-Happy-Hours",
+      "detected_at": "2026-06-29T21:01:45.697095+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9708/Pizza---Pour-Wednesdays-",
+      "detail": "New page added: /whats-on/content/20258/9708/Pizza---Pour-Wednesdays-",
+      "detected_at": "2026-06-29T21:01:38.526262+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
+      "detail": "Page removed: /whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
+      "detected_at": "2026-06-29T21:01:25.308907+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
+      "detail": "Page removed: /whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
+      "detected_at": "2026-06-29T21:01:25.294815+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
+      "detected_at": "2026-06-29T21:01:25.280236+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
+      "detected_at": "2026-06-29T21:01:25.264052+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1310,97 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered",
       "detail": "Page updated: /whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered",
       "detected_at": "2026-06-09T10:38:32.349059+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9483/Xclusive-The-Show",
-      "detail": "Page updated: /whats-on/content/1352/9483/Xclusive-The-Show",
-      "detected_at": "2026-06-09T10:38:31.271307+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9433/Happy-Campers",
-      "detail": "Page updated: /whats-on/content/1352/9433/Happy-Campers",
-      "detected_at": "2026-06-09T10:38:30.245825+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9196/Thank-You-for-the-Music",
-      "detail": "Page updated: /whats-on/content/1352/9196/Thank-You-for-the-Music",
-      "detected_at": "2026-06-09T10:38:29.100944+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9557/Ballet-of-Lights--Cinderella-in-a-Sparkling-Show",
-      "detail": "Page updated: /whats-on/content/1352/9557/Ballet-of-Lights--Cinderella-in-a-Sparkling-Show",
-      "detected_at": "2026-06-09T10:38:28.076943+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9565/Jagged-Little-Pill--The-Musical",
-      "detail": "Page updated: /whats-on/content/1352/9565/Jagged-Little-Pill--The-Musical",
-      "detected_at": "2026-06-09T10:38:26.972972+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9487/Miss-Universe-New-Zealand",
-      "detail": "Page updated: /whats-on/content/1352/9487/Miss-Universe-New-Zealand",
-      "detected_at": "2026-06-09T10:38:25.902247+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour",
-      "detail": "Page updated: /whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour",
-      "detected_at": "2026-06-09T10:38:24.817980+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know",
-      "detail": "Page updated: /whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know",
-      "detected_at": "2026-06-09T10:38:23.732806+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show",
-      "detail": "Page updated: /whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show",
-      "detected_at": "2026-06-09T10:38:22.674653+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9440/Nate-Jackson-2026",
-      "detail": "Page updated: /whats-on/content/1352/9440/Nate-Jackson-2026",
-      "detected_at": "2026-06-09T10:38:21.572056+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9480/Beatlemania-On-Tour-2026",
-      "detail": "Page updated: /whats-on/content/1352/9480/Beatlemania-On-Tour-2026",
-      "detected_at": "2026-06-09T10:38:20.488823+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9423/Magic-Men-Australia-2026",
-      "detail": "Page updated: /whats-on/content/1352/9423/Magic-Men-Australia-2026",
-      "detected_at": "2026-06-09T10:38:19.408478+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
-      "detail": "Page updated: /whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
-      "detected_at": "2026-06-09T10:38:18.320831+00:00"
     }
   ]
 }
