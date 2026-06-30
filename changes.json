@@ -1,7 +1,126 @@
 {
-  "updated": "2026-06-29 21:01 UTC",
+  "updated": "2026-06-30 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
+      "detail": "Page removed: /whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
+      "detected_at": "2026-06-30T21:01:22.508754+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month",
+      "detail": "Page removed: /whats-on/content/19512/5753/June-Burger-and-Side-of-the-Month",
+      "detected_at": "2026-06-30T21:01:22.495571+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
+      "detail": "New page added: /whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
+      "detected_at": "2026-06-30T21:01:22.480798+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
+      "detail": "New page added: /whats-on/content/20258/9560/Jingo-Night",
+      "detected_at": "2026-06-30T21:01:19.994226+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience",
+      "detail": "Page removed: /whats-on/content/22728/9518/The-Tomahawk-Experience",
+      "detected_at": "2026-06-30T21:01:16.375797+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
+      "detail": "Page removed: /whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
+      "detected_at": "2026-06-30T21:01:16.363277+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
+      "detail": "New page added: /whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
+      "detected_at": "2026-06-30T21:01:16.350649+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
+      "detail": "New page added: /whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
+      "detected_at": "2026-06-30T21:01:16.338107+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
+      "detected_at": "2026-06-30T21:01:16.324832+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
+      "detected_at": "2026-06-30T21:01:16.309729+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detail": "Page removed: /whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detected_at": "2026-06-30T21:01:11.000930+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
+      "detail": "Page removed: /whats-on/content/1352/9430/Burger-Hour",
+      "detected_at": "2026-06-30T21:01:10.988153+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Super-Rugby-Grand-Final",
+      "detail": "Page removed: /whats-on/content/1352/9239/Super-Rugby-Grand-Final",
+      "detected_at": "2026-06-30T21:01:10.972301+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/lunar-new-year/",
+      "detail": "Page removed: /lunar-new-year/",
+      "detected_at": "2026-06-30T21:01:10.959757+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/join-our-team/",
+      "detail": "Page removed: /join-our-team/",
+      "detected_at": "2026-06-30T21:01:10.947058+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/discover-your-style/",
+      "detail": "Page removed: /discover-your-style/",
+      "detected_at": "2026-06-30T21:01:10.933635+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans",
+      "detail": "New page added: /whats-on/content/1352/9239/Home-of-the-Super-Fans",
+      "detected_at": "2026-06-30T21:01:10.916872+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1282,125 +1401,6 @@
       "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/",
       "detail": "Page updated: /eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/",
       "detected_at": "2026-06-09T10:38:46.379751+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/schnitty4sam/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/schnitty4sam/",
-      "detected_at": "2026-06-09T10:38:45.776027+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/soccer-world-cup/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/soccer-world-cup/",
-      "detected_at": "2026-06-09T10:38:44.145215+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/champions-league-final/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/champions-league-final/",
-      "detected_at": "2026-06-09T10:38:43.541533+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/1-wings-thursdays/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/1-wings-thursdays/",
-      "detected_at": "2026-06-09T10:38:42.917753+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/2x1-fries-at-the-district/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/2x1-fries-at-the-district/",
-      "detected_at": "2026-06-09T10:38:42.285236+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/fa-cup-final/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/fa-cup-final/",
-      "detected_at": "2026-06-09T10:38:41.662740+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/25-burger-beer/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/25-burger-beer/",
-      "detected_at": "2026-06-09T10:38:41.073111+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/south-coast-sunday-sesh/",
-      "detected_at": "2026-06-09T10:38:40.430971+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/15-schnitzels-sundays/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/15-schnitzels-sundays/",
-      "detected_at": "2026-06-09T10:38:39.802837+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/english-premier-league/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/english-premier-league/",
-      "detected_at": "2026-06-09T10:38:39.139200+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/happy-hour/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/happy-hour/",
-      "detected_at": "2026-06-09T10:38:38.493003+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/",
-      "detected_at": "2026-06-09T10:38:37.873586+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/",
-      "detail": "Page updated: /whats-on/content/",
-      "detected_at": "2026-06-09T10:38:37.269819+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/",
-      "detail": "Page updated: /whats-on/",
-      "detected_at": "2026-06-09T10:38:36.645731+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/casino/whats-on/",
-      "detail": "Page updated: /casino/whats-on/",
-      "detected_at": "2026-06-09T10:38:36.055387+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/8531/The-2-Johnnies",
-      "detail": "Page updated: /whats-on/content/1352/8531/The-2-Johnnies",
-      "detected_at": "2026-06-09T10:38:33.488612+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered",
-      "detail": "Page updated: /whats-on/content/1352/9625/Matt-Matthew-Not-What-I-Ordered",
-      "detected_at": "2026-06-09T10:38:32.349059+00:00"
     }
   ]
 }
