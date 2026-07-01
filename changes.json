@@ -1,7 +1,77 @@
 {
-  "updated": "2026-06-30 21:01 UTC",
+  "updated": "2026-07-01 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/skycity-rewards-midweek-magic-offer/",
+      "detail": "Page removed: /eat-and-drink/central-cafe/skycity-rewards-midweek-magic-offer/",
+      "detected_at": "2026-07-01T21:00:34.109850+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detail": "New page added: /whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detected_at": "2026-07-01T21:00:34.096517+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-exclusive-dining/",
+      "detail": "New page added: /eat-and-drink/central-cafe/rewards-members-exclusive-dining/",
+      "detected_at": "2026-07-01T21:00:34.078924+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/skyjump-skywalk/skywalk/",
+      "detail": "Page removed: /sky-tower/skyjump-skywalk/skywalk/",
+      "detected_at": "2026-07-01T21:00:29.323730+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/skyjump-skywalk/skyjump/",
+      "detail": "Page removed: /sky-tower/skyjump-skywalk/skyjump/",
+      "detected_at": "2026-07-01T21:00:29.304036+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/education/",
+      "detail": "Page removed: /sky-tower/education/",
+      "detected_at": "2026-07-01T21:00:29.290855+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detail": "New page added: /whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detected_at": "2026-07-01T21:00:29.277585+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/skywalk/",
+      "detail": "New page added: /sky-tower/skywalk/",
+      "detected_at": "2026-07-01T21:00:29.264424+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/skyride/",
+      "detail": "New page added: /sky-tower/skyride/",
+      "detected_at": "2026-07-01T21:00:29.251228+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/sky-tower/skyjump/",
+      "detail": "New page added: /sky-tower/skyjump/",
+      "detected_at": "2026-07-01T21:00:29.236445+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1331,76 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/casino/",
       "detail": "Page updated: /offers/casino/",
       "detected_at": "2026-06-09T10:38:53.021953+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/sport/",
-      "detail": "Page updated: /offers/sport/",
-      "detected_at": "2026-06-09T10:38:52.421199+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/hotel/skycity-unlocked/",
-      "detail": "Page updated: /offers/hotel/skycity-unlocked/",
-      "detected_at": "2026-06-09T10:38:51.796881+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/hotel/",
-      "detail": "Page updated: /offers/hotel/",
-      "detected_at": "2026-06-09T10:38:51.165985+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/events/",
-      "detail": "Page updated: /offers/events/",
-      "detected_at": "2026-06-09T10:38:50.549605+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/entertainment/",
-      "detail": "Page updated: /offers/entertainment/",
-      "detected_at": "2026-06-09T10:38:49.928567+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/eat-and-drink/",
-      "detail": "Page updated: /offers/eat-and-drink/",
-      "detected_at": "2026-06-09T10:38:48.883435+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/",
-      "detail": "Page updated: /offers/",
-      "detected_at": "2026-06-09T10:38:48.277813+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/events-at-skycity/",
-      "detail": "Page updated: /events-at-skycity/",
-      "detected_at": "2026-06-09T10:38:47.627979+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/",
-      "detected_at": "2026-06-09T10:38:46.999238+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/",
-      "detail": "Page updated: /eat-and-drink/the-district/whats-on/pirate-life-vip-trip-to-the-g/",
-      "detected_at": "2026-06-09T10:38:46.379751+00:00"
     }
   ]
 }
