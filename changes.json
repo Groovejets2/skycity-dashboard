@@ -1,7 +1,28 @@
 {
-  "updated": "2026-07-01 21:00 UTC",
+  "updated": "2026-07-02 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9727/Aiga-Family-Feast",
+      "detail": "New page added: /whats-on/content/1352/9727/Aiga-Family-Feast",
+      "detected_at": "2026-07-02T21:00:27.305858+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9712/Sky-Tower-x-EVENT-Movie-Combo-at-SkyCity-Auckland",
+      "detail": "New page added: /whats-on/content/1352/9712/Sky-Tower-x-EVENT-Movie-Combo-at-SkyCity-Auckland",
+      "detected_at": "2026-07-02T21:00:27.293050+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9711/Matariki-Night-Markets",
+      "detail": "New page added: /whats-on/content/1352/9711/Matariki-Night-Markets",
+      "detected_at": "2026-07-02T21:00:27.278626+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2022/february/",
       "detail": "Page updated: /offers/ib/2022/february/",
       "detected_at": "2026-06-09T10:38:54.919646+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/",
-      "detail": "Page updated: /offers/ib/2022/",
-      "detected_at": "2026-06-09T10:38:54.304001+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/",
-      "detail": "Page updated: /offers/ib/",
-      "detected_at": "2026-06-09T10:38:53.624201+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/casino/",
-      "detail": "Page updated: /offers/casino/",
-      "detected_at": "2026-06-09T10:38:53.021953+00:00"
     }
   ]
 }
