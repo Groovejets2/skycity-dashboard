@@ -1,7 +1,35 @@
 {
-  "updated": "2026-07-02 21:00 UTC",
+  "updated": "2026-07-05 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7547/Amuse-Bar---Kitchen-Matariki-Specials-",
+      "detail": "New page added: /whats-on/content/19512/7547/Amuse-Bar---Kitchen-Matariki-Specials-",
+      "detected_at": "2026-07-05T20:00:52.527601+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
+      "detail": "Page removed: /whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
+      "detected_at": "2026-07-05T20:00:48.330138+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/1millionsundays/",
+      "detail": "New page added: /1millionsundays/",
+      "detected_at": "2026-07-05T20:00:48.316578+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
+      "detail": "Page removed: /whats-on/content/1352/9378/Kanan-Gill---Not-This-Again",
+      "detected_at": "2026-07-05T20:00:45.250528+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1373,34 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2022/june/",
       "detail": "Page updated: /offers/ib/2022/june/",
       "detected_at": "2026-06-09T10:38:57.390002+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/may/",
-      "detail": "Page updated: /offers/ib/2022/may/",
-      "detected_at": "2026-06-09T10:38:56.765160+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/april/",
-      "detail": "Page updated: /offers/ib/2022/april/",
-      "detected_at": "2026-06-09T10:38:56.151418+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/march/",
-      "detail": "Page updated: /offers/ib/2022/march/",
-      "detected_at": "2026-06-09T10:38:55.516934+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/february/",
-      "detail": "Page updated: /offers/ib/2022/february/",
-      "detected_at": "2026-06-09T10:38:54.919646+00:00"
     }
   ]
 }
