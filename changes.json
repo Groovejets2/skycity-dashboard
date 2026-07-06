@@ -1,7 +1,42 @@
 {
-  "updated": "2026-07-05 21:00 UTC",
+  "updated": "2026-07-06 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
+      "detail": "Page removed: /whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
+      "detected_at": "2026-07-06T21:01:07.843405+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
+      "detail": "Page removed: /whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
+      "detected_at": "2026-07-06T21:01:07.830339+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-kitchen/the-tomahawk-experience/",
+      "detail": "Page removed: /eat-and-drink/the-kitchen/the-tomahawk-experience/",
+      "detected_at": "2026-07-06T21:01:07.817295+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
+      "detected_at": "2026-07-06T21:01:07.803695+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
+      "detected_at": "2026-07-06T21:01:07.788859+00:00"
+    },
     {
       "site": "hamilton",
       "type": "new_page",
@@ -1366,41 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2022/test/",
       "detail": "Page updated: /offers/ib/2022/test/",
       "detected_at": "2026-06-09T10:39:00.521516+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/december/",
-      "detail": "Page updated: /offers/ib/2022/december/",
-      "detected_at": "2026-06-09T10:38:59.883509+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/october/",
-      "detail": "Page updated: /offers/ib/2022/october/",
-      "detected_at": "2026-06-09T10:38:59.268609+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/september/",
-      "detail": "Page updated: /offers/ib/2022/september/",
-      "detected_at": "2026-06-09T10:38:58.621919+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/august/",
-      "detail": "Page updated: /offers/ib/2022/august/",
-      "detected_at": "2026-06-09T10:38:58.029637+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/june/",
-      "detail": "Page updated: /offers/ib/2022/june/",
-      "detected_at": "2026-06-09T10:38:57.390002+00:00"
     }
   ]
 }
