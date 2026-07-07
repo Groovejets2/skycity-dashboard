@@ -1,7 +1,35 @@
 {
-  "updated": "2026-07-06 21:01 UTC",
+  "updated": "2026-07-07 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
+      "detail": "Page removed: /whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
+      "detected_at": "2026-07-07T21:01:02.481819+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "poker_detected",
+      "url": "https://skycityauckland.co.nz/casino/poker/",
+      "detail": "\ud83c\udfb2 Poker: poker \u2014 /casino/poker/",
+      "detected_at": "2026-07-07T21:00:59.220733+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/casino/skycity-poker/",
+      "detail": "Page removed: /casino/skycity-poker/",
+      "detected_at": "2026-07-07T21:00:59.204929+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/casino/poker/",
+      "detail": "New page added: /casino/poker/",
+      "detected_at": "2026-07-07T21:00:59.188038+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1373,34 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2023/june/",
       "detail": "Page updated: /offers/ib/2023/june/",
       "detected_at": "2026-06-09T10:39:03.068043+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/april-may/",
-      "detail": "Page updated: /offers/ib/2023/april-may/",
-      "detected_at": "2026-06-09T10:39:02.436527+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/february/",
-      "detail": "Page updated: /offers/ib/2023/february/",
-      "detected_at": "2026-06-09T10:39:01.836723+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/",
-      "detail": "Page updated: /offers/ib/2023/",
-      "detected_at": "2026-06-09T10:39:01.157596+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2022/test/",
-      "detail": "Page updated: /offers/ib/2022/test/",
-      "detected_at": "2026-06-09T10:39:00.521516+00:00"
     }
   ]
 }
