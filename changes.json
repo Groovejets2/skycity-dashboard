@@ -1,7 +1,14 @@
 {
-  "updated": "2026-07-07 21:01 UTC",
+  "updated": "2026-07-08 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
+      "detail": "New page added: /whats-on/content/1352/9430/Burger-Hour",
+      "detected_at": "2026-07-08T21:01:05.773426+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1394,13 +1401,6 @@
       "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
       "detail": "Page updated: /offers/ib/2023/july/",
       "detected_at": "2026-06-09T10:39:03.697037+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/june/",
-      "detail": "Page updated: /offers/ib/2023/june/",
-      "detected_at": "2026-06-09T10:39:03.068043+00:00"
     }
   ]
 }
