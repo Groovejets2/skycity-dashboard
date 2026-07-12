@@ -1,7 +1,42 @@
 {
-  "updated": "2026-07-09 21:00 UTC",
+  "updated": "2026-07-12 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
+      "detail": "Page removed: /whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
+      "detected_at": "2026-07-12T20:00:31.717894+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9711/Matariki-Night-Markets",
+      "detail": "Page removed: /whats-on/content/1352/9711/Matariki-Night-Markets",
+      "detected_at": "2026-07-12T20:00:28.793804+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
+      "detail": "Page removed: /whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
+      "detected_at": "2026-07-12T20:00:28.780550+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
+      "detail": "Page removed: /whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
+      "detected_at": "2026-07-12T20:00:28.767750+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9423/Magic-Men-Australia-2026",
+      "detail": "Page removed: /whats-on/content/1352/9423/Magic-Men-Australia-2026",
+      "detected_at": "2026-07-12T20:00:28.752301+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1366,41 +1401,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
       "detail": "Page updated: /whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
       "detected_at": "2026-06-09T10:39:06.891326+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/december/",
-      "detail": "Page updated: /offers/ib/2023/december/",
-      "detected_at": "2026-06-09T10:39:06.267335+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/november/",
-      "detail": "Page updated: /offers/ib/2023/november/",
-      "detected_at": "2026-06-09T10:39:05.632094+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/october/",
-      "detail": "Page updated: /offers/ib/2023/october/",
-      "detected_at": "2026-06-09T10:39:04.974992+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/september/",
-      "detail": "Page updated: /offers/ib/2023/september/",
-      "detected_at": "2026-06-09T10:39:04.367622+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/offers/ib/2023/july/",
-      "detail": "Page updated: /offers/ib/2023/july/",
-      "detected_at": "2026-06-09T10:39:03.697037+00:00"
     }
   ]
 }
