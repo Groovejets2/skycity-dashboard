@@ -1,7 +1,56 @@
 {
-  "updated": "2026-07-13 21:00 UTC",
+  "updated": "2026-07-14 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9440/Nate-Jackson-2026",
+      "detail": "Page removed: /whats-on/content/1352/9440/Nate-Jackson-2026",
+      "detected_at": "2026-07-14T21:00:51.689700+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/restaurants/cassia/private-dining/",
+      "detail": "Page removed: /restaurants/cassia/private-dining/",
+      "detected_at": "2026-07-14T21:00:51.684859+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/restaurants/cassia/our-precinct-map/",
+      "detail": "Page removed: /restaurants/cassia/our-precinct-map/",
+      "detected_at": "2026-07-14T21:00:51.680068+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/restaurants/cassia/cassia-at-home/",
+      "detail": "Page removed: /restaurants/cassia/cassia-at-home/",
+      "detected_at": "2026-07-14T21:00:51.675371+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/restaurants/cassia/about-us/",
+      "detail": "Page removed: /restaurants/cassia/about-us/",
+      "detected_at": "2026-07-14T21:00:51.669589+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/restaurants/cassia/",
+      "detail": "Page removed: /restaurants/cassia/",
+      "detected_at": "2026-07-14T21:00:51.663642+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9730/New-Zealand-International-Film-Festival",
+      "detail": "New page added: /whats-on/content/1352/9730/New-Zealand-International-Film-Festival",
+      "detected_at": "2026-07-14T21:00:51.653910+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1352,55 +1401,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
       "detail": "Page updated: /whats-on/content/22728/3995/The-District-Poker-Freeze-Out",
       "detected_at": "2026-06-09T10:39:11.296903+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4217/Happy-Hour",
-      "detail": "Page updated: /whats-on/content/22728/4217/Happy-Hour",
-      "detected_at": "2026-06-09T10:39:10.702088+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9421/Game-Day",
-      "detail": "Page updated: /whats-on/content/22728/9421/Game-Day",
-      "detected_at": "2026-06-09T10:39:10.063820+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot",
-      "detail": "Page updated: /whats-on/content/22728/9599/Thursday-Cash-Jackpot",
-      "detected_at": "2026-06-09T10:39:09.435898+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
-      "detail": "Page updated: /whats-on/content/22728/9571/SkyCity-BMW-Giveaway",
-      "detected_at": "2026-06-09T10:39:08.755950+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
-      "detail": "Page updated: /whats-on/content/22728/6115/-Coffee---Cake--11-50-Deal",
-      "detected_at": "2026-06-09T10:39:08.115067+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/6842/Pre-Theatre-Dining-at-iTL",
-      "detected_at": "2026-06-09T10:39:07.497944+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/4450/Bottomless-Weekends-at-iTL",
-      "detected_at": "2026-06-09T10:39:06.891326+00:00"
     }
   ]
 }
