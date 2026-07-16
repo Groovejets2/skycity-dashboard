@@ -1,7 +1,49 @@
 {
-  "updated": "2026-07-15 21:00 UTC",
+  "updated": "2026-07-16 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detail": "Page removed: /conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detected_at": "2026-07-16T21:01:00.839628+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/christmas-at-zone/",
+      "detail": "Page removed: /conferences-functions-and-events/christmas-parties/christmas-at-zone/",
+      "detected_at": "2026-07-16T21:01:00.823505+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/christmas-at-bowl-and-social/",
+      "detail": "Page removed: /conferences-functions-and-events/christmas-parties/christmas-at-bowl-and-social/",
+      "detected_at": "2026-07-16T21:01:00.809787+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/",
+      "detail": "Page removed: /conferences-functions-and-events/christmas-parties/",
+      "detected_at": "2026-07-16T21:01:00.795335+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/state-of-origin-blues-vs-maroons/",
+      "detected_at": "2026-07-16T21:00:57.638328+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/1millionsundays/",
+      "detail": "Page removed: /1millionsundays/",
+      "detected_at": "2026-07-16T21:00:57.623688+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1359,48 +1401,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
       "detail": "Page updated: /whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
       "detected_at": "2026-06-09T10:39:16.381162+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
-      "detail": "Page updated: /whats-on/content/22728/7455/Pre-Show-Dining-at-The-Kitchen",
-      "detected_at": "2026-06-09T10:39:15.749478+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
-      "detail": "Page updated: /whats-on/content/22728/7453/Chef-s-Table-at-The-Kitchen",
-      "detected_at": "2026-06-09T10:39:15.116308+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
-      "detail": "Page updated: /whats-on/content/22728/7291/-25-Burgers-at-The-Guardsman",
-      "detected_at": "2026-06-09T10:39:14.439036+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
-      "detail": "Page updated: /whats-on/content/22728/7016/-25-Pasta-Tuesdays-at-iTL",
-      "detected_at": "2026-06-09T10:39:13.826354+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
-      "detail": "Page updated: /whats-on/content/22728/6502/-20-Pub-Classics-at-The-Guardsman",
-      "detected_at": "2026-06-09T10:39:13.206997+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
-      "detail": "Page updated: /whats-on/content/22728/5457/2-for-1-Schnitzel-at-The-Guardsman-",
-      "detected_at": "2026-06-09T10:39:12.594634+00:00"
     }
   ]
 }
