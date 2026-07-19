@@ -1,7 +1,84 @@
 {
-  "updated": "2026-07-16 21:01 UTC",
+  "updated": "2026-07-19 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
+      "detail": "Page removed: /whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
+      "detected_at": "2026-07-19T20:00:24.441015+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
+      "detail": "Page removed: /whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
+      "detected_at": "2026-07-19T20:00:21.194294+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9739/-1-Million-Sundays",
+      "detail": "New page added: /whats-on/content/22728/9739/-1-Million-Sundays",
+      "detected_at": "2026-07-19T20:00:21.183306+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9599/Thursday-Cash-Jackpot",
+      "detail": "New page added: /whats-on/content/22728/9599/Thursday-Cash-Jackpot",
+      "detected_at": "2026-07-19T20:00:21.169769+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9712/Sky-Tower-x-EVENT-Movie-Combo-at-SkyCity-Auckland",
+      "detail": "Page removed: /whats-on/content/1352/9712/Sky-Tower-x-EVENT-Movie-Combo-at-SkyCity-Auckland",
+      "detected_at": "2026-07-19T20:00:17.559089+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9645/Minions-Mayhem-at-the-Sky-Tower",
+      "detail": "Page removed: /whats-on/content/1352/9645/Minions-Mayhem-at-the-Sky-Tower",
+      "detected_at": "2026-07-19T20:00:17.546874+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9642/Football-World-Cup",
+      "detail": "Page removed: /whats-on/content/1352/9642/Football-World-Cup",
+      "detected_at": "2026-07-19T20:00:17.534320+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9635/School-Holiday-Getaway",
+      "detail": "Page removed: /whats-on/content/1352/9635/School-Holiday-Getaway",
+      "detected_at": "2026-07-19T20:00:17.521995+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show",
+      "detail": "Page removed: /whats-on/content/1352/9558/Ballet-of-Lights--Sleeping-Beauty-in-a-Sparkling-Show",
+      "detected_at": "2026-07-19T20:00:17.509480+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know",
+      "detail": "Page removed: /whats-on/content/1352/8830/Mo-Gilligan--The-Mo-You-Know",
+      "detected_at": "2026-07-19T20:00:17.488718+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "offers_updated",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-07-19T20:00:15.591022+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1324,83 +1401,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
       "detail": "Page updated: /whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
       "detected_at": "2026-06-09T10:39:23.278164+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
-      "detail": "Page updated: /whats-on/content/22728/9272/Pre-Theatre-Dining-at-Madame-Hanoi",
-      "detected_at": "2026-06-09T10:39:22.663628+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9157/Yum-Cha-at-Huami-",
-      "detail": "Page updated: /whats-on/content/22728/9157/Yum-Cha-at-Huami-",
-      "detected_at": "2026-06-09T10:39:22.025571+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8464/Bottomless-Booths",
-      "detail": "Page updated: /whats-on/content/22728/8464/Bottomless-Booths",
-      "detected_at": "2026-06-09T10:39:21.406144+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
-      "detail": "Page updated: /whats-on/content/22728/8428/iTL-On-The-Go---Lunch-Special",
-      "detected_at": "2026-06-09T10:39:20.751664+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
-      "detail": "Page updated: /whats-on/content/22728/8422/SOUTH-COAST-SUNDAY-SESH",
-      "detected_at": "2026-06-09T10:39:20.117871+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8404/-15-Schnitzels-Sundays",
-      "detail": "Page updated: /whats-on/content/22728/8404/-15-Schnitzels-Sundays",
-      "detected_at": "2026-06-09T10:39:19.492345+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
-      "detail": "Page updated: /whats-on/content/22728/9459/-1-WINGS-THURSDAYS",
-      "detected_at": "2026-06-09T10:39:18.885969+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9455/2x1-fries-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/9455/2x1-fries-at-The-District",
-      "detected_at": "2026-06-09T10:39:18.282901+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8371/Up-late-and-Loud-DJS",
-      "detail": "Page updated: /whats-on/content/22728/8371/Up-late-and-Loud-DJS",
-      "detected_at": "2026-06-09T10:39:17.647911+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8359/Live-Bands-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/8359/Live-Bands-at-The-District",
-      "detected_at": "2026-06-09T10:39:17.036250+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
-      "detail": "Page updated: /whats-on/content/22728/8143/-25-BURGER---BEER---Saturdays-at-The-District",
-      "detected_at": "2026-06-09T10:39:16.381162+00:00"
     }
   ]
 }
