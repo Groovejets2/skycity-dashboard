@@ -1,26 +1,26 @@
 {
-  "updated": "2026-07-19 21:00 UTC",
+  "updated": "2026-07-20 21:00 UTC",
   "total_changes": 200,
   "sites": {
     "auckland": {
       "name": "SkyCity Auckland",
       "pages": 252,
-      "last_checked": "2026-07-19T21:00:18.322467+00:00"
+      "last_checked": "2026-07-20T21:00:30.095344+00:00"
     },
     "adelaide": {
       "name": "SkyCity Adelaide",
-      "pages": 201,
-      "last_checked": "2026-07-19T21:00:22.207095+00:00"
+      "pages": 200,
+      "last_checked": "2026-07-20T21:00:32.832668+00:00"
     },
     "queenstown": {
       "name": "SkyCity Queenstown",
       "pages": 65,
-      "last_checked": "2026-07-19T21:00:24.678917+00:00"
+      "last_checked": "2026-07-20T21:00:36.475618+00:00"
     },
     "hamilton": {
       "name": "SkyCity Hamilton",
-      "pages": 109,
-      "last_checked": "2026-07-19T21:00:25.954074+00:00"
+      "pages": 114,
+      "last_checked": "2026-07-20T21:00:41.764153+00:00"
     },
     "corporate": {
       "name": "SkyCity Entertainment Group",

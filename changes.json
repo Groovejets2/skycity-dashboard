@@ -1,7 +1,77 @@
 {
-  "updated": "2026-07-19 21:00 UTC",
+  "updated": "2026-07-20 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detail": "New page added: /conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detected_at": "2026-07-20T21:00:41.751121+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/christmas-zone/",
+      "detail": "New page added: /conferences-functions-and-events/christmas-parties/christmas-zone/",
+      "detected_at": "2026-07-20T21:00:41.738126+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/christmas-at-bowl-and-social/",
+      "detail": "New page added: /conferences-functions-and-events/christmas-parties/christmas-at-bowl-and-social/",
+      "detected_at": "2026-07-20T21:00:41.724540+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/",
+      "detail": "New page added: /conferences-functions-and-events/christmas-parties/",
+      "detected_at": "2026-07-20T21:00:41.706923+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/casino/monthly-gaming-statements/",
+      "detail": "New page added: /casino/monthly-gaming-statements/",
+      "detected_at": "2026-07-20T21:00:41.691613+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/casino/monthly-gaming-statements/",
+      "detail": "New page added: /casino/monthly-gaming-statements/",
+      "detected_at": "2026-07-20T21:00:36.458018+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "offers_updated",
+      "url": "https://skycityqueenstown.co.nz/offers/",
+      "detail": "[Offers page](https://skycityqueenstown.co.nz/offers/)",
+      "detected_at": "2026-07-20T21:00:34.534150+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/soccer-world-cup/",
+      "detail": "Page removed: /eat-and-drink/the-district/whats-on/soccer-world-cup/",
+      "detected_at": "2026-07-20T21:00:32.818700+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detail": "Page removed: /whats-on/content/1352/9596/Matariki-at-SkyCity",
+      "detected_at": "2026-07-20T21:00:30.081527+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/casino/monthly-gaming-statements/",
+      "detail": "New page added: /casino/monthly-gaming-statements/",
+      "detected_at": "2026-07-20T21:00:30.066329+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1331,76 +1401,6 @@
       "url": "https://skycityqueenstown.co.nz/offers/restaurants/",
       "detail": "Page updated: /offers/restaurants/",
       "detected_at": "2026-06-09T10:39:33.173690+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/offers/",
-      "detail": "Page updated: /offers/",
-      "detected_at": "2026-06-09T10:39:32.108143+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/",
-      "detail": "Page updated: /whats-on/content/",
-      "detected_at": "2026-06-09T10:39:31.051690+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/",
-      "detail": "Page updated: /whats-on/",
-      "detected_at": "2026-06-09T10:39:29.973646+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
-      "detail": "Page updated: /whats-on/content/22728/9533/SOCCER-WORLD-CUP-AT-THE-DISTRICT-SPORTS-BAR",
-      "detected_at": "2026-06-09T10:39:27.006576+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detail": "Page updated: /whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detected_at": "2026-06-09T10:39:26.379627+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu",
-      "detail": "Page updated: /whats-on/content/22728/9614/Sunday-Set-Menu",
-      "detected_at": "2026-06-09T10:39:25.742566+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
-      "detail": "Page updated: /whats-on/content/22728/6821/STATE-OF-ORIGIN-BLUES-vs--MAROONS-",
-      "detected_at": "2026-06-09T10:39:25.101476+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-",
-      "detail": "Page updated: /whats-on/content/22728/9573/High-Society-",
-      "detected_at": "2026-06-09T10:39:24.484050+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detail": "Page updated: /whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detected_at": "2026-06-09T10:39:23.897703+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "content_changed",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
-      "detail": "Page updated: /whats-on/content/22728/9309/2-for-1-Lunch-Fridays",
-      "detected_at": "2026-06-09T10:39:23.278164+00:00"
     }
   ]
 }
