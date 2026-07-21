@@ -1,7 +1,56 @@
 {
-  "updated": "2026-07-20 21:00 UTC",
+  "updated": "2026-07-21 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detail": "Page removed: /conferences-functions-and-events/christmas-parties/viva-las-christmas/",
+      "detected_at": "2026-07-21T21:00:51.312537+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/1775/Christmas-Parties",
+      "detail": "New page added: /whats-on/content/19512/1775/Christmas-Parties",
+      "detected_at": "2026-07-21T21:00:51.299024+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/conferences-functions-and-events/christmas-parties/a-totally-90s-christmas/",
+      "detail": "New page added: /conferences-functions-and-events/christmas-parties/a-totally-90s-christmas/",
+      "detected_at": "2026-07-21T21:00:51.282577+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9631/Adelaide-s-Home-of-UFC",
+      "detail": "Page removed: /whats-on/content/22728/9631/Adelaide-s-Home-of-UFC",
+      "detected_at": "2026-07-21T21:00:46.287174+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9631/ADELAIDE-S-HOME-OF-UFC",
+      "detail": "New page added: /whats-on/content/22728/9631/ADELAIDE-S-HOME-OF-UFC",
+      "detected_at": "2026-07-21T21:00:46.269365+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour",
+      "detail": "Page removed: /whats-on/content/1352/9358/STEVEN-HO---Not-Your-Hero-Comedy-Tour",
+      "detected_at": "2026-07-21T21:00:42.941662+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "offers_updated",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-07-21T21:00:40.984310+00:00"
+    },
     {
       "site": "hamilton",
       "type": "new_page",
@@ -1352,55 +1401,6 @@
       "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
       "detail": "Page updated: /whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
       "detected_at": "2026-06-09T10:39:40.667269+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/8707/Social-Hour-",
-      "detail": "Page updated: /whats-on/content/20258/8707/Social-Hour-",
-      "detected_at": "2026-06-09T10:39:39.571065+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
-      "detail": "Page updated: /whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
-      "detected_at": "2026-06-09T10:39:38.489522+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
-      "detail": "Page updated: /whats-on/content/20258/9425/Warm-Up-Hour",
-      "detected_at": "2026-06-09T10:39:37.400199+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/offers/show-by-skycity/",
-      "detail": "Page updated: /offers/show-by-skycity/",
-      "detected_at": "2026-06-09T10:39:36.388077+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/offers/members/",
-      "detail": "Page updated: /offers/members/",
-      "detected_at": "2026-06-09T10:39:35.370198+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/offers/restaurants/november-meal-deal/",
-      "detail": "Page updated: /offers/restaurants/november-meal-deal/",
-      "detected_at": "2026-06-09T10:39:34.262514+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/offers/restaurants/",
-      "detail": "Page updated: /offers/restaurants/",
-      "detected_at": "2026-06-09T10:39:33.173690+00:00"
     }
   ]
 }
