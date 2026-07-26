@@ -1,7 +1,42 @@
 {
-  "updated": "2026-07-23 21:01 UTC",
+  "updated": "2026-07-26 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7547/Amuse-Bar---Kitchen-Matariki-Specials-",
+      "detail": "Page removed: /whats-on/content/19512/7547/Amuse-Bar---Kitchen-Matariki-Specials-",
+      "detected_at": "2026-07-26T20:01:03.215323+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/3564/Brown-Sugar---The-Rolling-Stones-Experience",
+      "detail": "New page added: /whats-on/content/19512/3564/Brown-Sugar---The-Rolling-Stones-Experience",
+      "detected_at": "2026-07-26T20:01:03.200900+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detail": "Page removed: /whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detected_at": "2026-07-26T20:01:01.601037+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "Page removed: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-07-26T20:01:01.587110+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
+      "detail": "Page removed: /whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
+      "detected_at": "2026-07-26T20:00:56.477596+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1366,41 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/bookings/",
       "detail": "Page updated: /eat-drink/eat-burger/bookings/",
       "detected_at": "2026-06-09T10:39:48.130701+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/virtual-tour/",
-      "detail": "Page updated: /eat-drink/eat-burger/virtual-tour/",
-      "detected_at": "2026-06-09T10:39:47.212630+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/",
-      "detail": "Page updated: /eat-drink/eat-burger/",
-      "detected_at": "2026-06-09T10:39:46.314636+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/",
-      "detail": "Page updated: /eat-drink/",
-      "detected_at": "2026-06-09T10:39:45.339993+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/casino/whats-on/",
-      "detail": "Page updated: /casino/whats-on/",
-      "detected_at": "2026-06-09T10:39:44.440130+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "content_changed",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
-      "detail": "Page updated: /whats-on/content/20258/9560/Jingo-Night",
-      "detected_at": "2026-06-09T10:39:42.784518+00:00"
     }
   ]
 }
