@@ -1,7 +1,49 @@
 {
-  "updated": "2026-07-26 21:01 UTC",
+  "updated": "2026-07-27 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9614/Sunday-Set-Menu",
+      "detail": "Page removed: /whats-on/content/22728/9614/Sunday-Set-Menu",
+      "detected_at": "2026-07-27T21:00:13.918587+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/huami/sunday-set-menu/",
+      "detail": "Page removed: /eat-and-drink/huami/sunday-set-menu/",
+      "detected_at": "2026-07-27T21:00:13.907902+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/about-us/host-responsibility/welfare-barring-information/",
+      "detail": "Page removed: /about-us/host-responsibility/welfare-barring-information/",
+      "detected_at": "2026-07-27T21:00:13.902134+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/about-us/host-responsibility/re-entry-information/",
+      "detail": "Page removed: /about-us/host-responsibility/re-entry-information/",
+      "detected_at": "2026-07-27T21:00:13.896223+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/7034/FOOTY-GRAND-FINAL-2026",
+      "detail": "New page added: /whats-on/content/22728/7034/FOOTY-GRAND-FINAL-2026",
+      "detected_at": "2026-07-27T21:00:13.890717+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/2026-footy-grand-final/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/2026-footy-grand-final/",
+      "detected_at": "2026-07-27T21:00:13.884314+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1359,48 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
       "detail": "Page updated: /eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
       "detected_at": "2026-06-09T10:39:53.837416+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/",
-      "detail": "Page updated: /eat-drink/the-local-taphouse/the-local-taphouse-happy-hours/",
-      "detected_at": "2026-06-09T10:39:52.907648+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/virtual-tour/",
-      "detail": "Page updated: /eat-drink/the-local-taphouse/virtual-tour/",
-      "detected_at": "2026-06-09T10:39:51.963141+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/group-bookings/",
-      "detail": "Page updated: /eat-drink/the-local-taphouse/group-bookings/",
-      "detected_at": "2026-06-09T10:39:50.992516+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/bookings/",
-      "detail": "Page updated: /eat-drink/the-local-taphouse/bookings/",
-      "detected_at": "2026-06-09T10:39:50.068139+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/",
-      "detail": "Page updated: /eat-drink/the-local-taphouse/",
-      "detected_at": "2026-06-09T10:39:49.132627+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/eat-burger/bookings/",
-      "detail": "Page updated: /eat-drink/eat-burger/bookings/",
-      "detected_at": "2026-06-09T10:39:48.130701+00:00"
     }
   ]
 }
