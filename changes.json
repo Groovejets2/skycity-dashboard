@@ -1,7 +1,28 @@
 {
-  "updated": "2026-07-29 21:00 UTC",
+  "updated": "2026-07-30 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
+      "detail": "Page removed: /whats-on/content/20258/9545/SkyCity-Stampede-Ticket-Competition",
+      "detected_at": "2026-07-30T21:00:51.234391+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detail": "New page added: /whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detected_at": "2026-07-30T21:00:51.221552+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "New page added: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-07-30T21:00:51.206804+00:00"
+    },
     {
       "site": "queenstown",
       "type": "removed_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/colouring-pages-for-kids/",
       "detail": "Page updated: /eat-drink/bowl-and-social/colouring-pages-for-kids/",
       "detected_at": "2026-06-09T10:40:02.159505+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/virtual-tour/",
-      "detail": "Page updated: /eat-drink/bowl-and-social/virtual-tour/",
-      "detected_at": "2026-06-09T10:40:01.191500+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/birthday-packages/",
-      "detail": "Page updated: /eat-drink/bowl-and-social/birthday-packages/",
-      "detected_at": "2026-06-09T10:40:00.260809+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/group-packages/",
-      "detail": "Page updated: /eat-drink/bowl-and-social/group-packages/",
-      "detected_at": "2026-06-09T10:39:59.335607+00:00"
     }
   ]
 }
