@@ -1,7 +1,84 @@
 {
-  "updated": "2026-07-30 21:00 UTC",
+  "updated": "2026-08-03 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
+      "detail": "Page removed: /whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
+      "detected_at": "2026-08-03T21:00:23.965315+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
+      "detail": "Page removed: /whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
+      "detected_at": "2026-08-03T21:00:23.948462+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9777/Jackpot-Bonus-Blitz",
+      "detail": "New page added: /whats-on/content/22728/9777/Jackpot-Bonus-Blitz",
+      "detected_at": "2026-08-03T21:00:19.672142+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9765/Rewards-Members-T-Bone-Offer",
+      "detail": "New page added: /whats-on/content/22728/9765/Rewards-Members-T-Bone-Offer",
+      "detected_at": "2026-08-03T21:00:19.658905+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-t-bone-offer/",
+      "detail": "New page added: /eat-and-drink/central-cafe/rewards-members-t-bone-offer/",
+      "detected_at": "2026-08-03T21:00:19.645838+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-member-exclusive-dining-1/",
+      "detail": "New page added: /eat-and-drink/central-cafe/rewards-member-exclusive-dining-1/",
+      "detected_at": "2026-08-03T21:00:19.630730+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9730/New-Zealand-International-Film-Festival",
+      "detail": "Page removed: /whats-on/content/1352/9730/New-Zealand-International-Film-Festival",
+      "detected_at": "2026-08-03T21:00:13.838505+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9601/In-The-Money",
+      "detail": "Page removed: /whats-on/content/1352/9601/In-The-Money",
+      "detected_at": "2026-08-03T21:00:13.821683+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9579/Delish",
+      "detail": "Page removed: /whats-on/content/1352/9579/Delish",
+      "detected_at": "2026-08-03T21:00:13.808309+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
+      "detail": "Page removed: /whats-on/content/1352/9430/Burger-Hour",
+      "detected_at": "2026-08-03T21:00:13.795382+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9748/Triple-Score",
+      "detail": "New page added: /whats-on/content/1352/9748/Triple-Score",
+      "detected_at": "2026-08-03T21:00:13.780858+00:00"
+    },
     {
       "site": "queenstown",
       "type": "removed_page",
@@ -1324,83 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
       "detail": "Page updated: /whats-on/content/19512/8174/Free-Coffee-at-Amuse-",
       "detected_at": "2026-06-09T10:40:12.541467+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
-      "detail": "Page updated: /whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
-      "detected_at": "2026-06-09T10:40:11.620143+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7155/Weekday-Happy-Hours",
-      "detail": "Page updated: /whats-on/content/19512/7155/Weekday-Happy-Hours",
-      "detected_at": "2026-06-09T10:40:10.709267+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours",
-      "detail": "Page updated: /whats-on/content/19512/7159/Weekend-Happy-Hours",
-      "detected_at": "2026-06-09T10:40:09.753033+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/2442/Live-Entertainment",
-      "detail": "Page updated: /whats-on/content/19512/2442/Live-Entertainment",
-      "detected_at": "2026-06-09T10:40:08.842345+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/",
-      "detail": "Page updated: /whats-on/content/",
-      "detected_at": "2026-06-09T10:40:07.922852+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/",
-      "detail": "Page updated: /whats-on/",
-      "detected_at": "2026-06-09T10:40:06.942520+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/palate-restaurant/",
-      "detail": "Page updated: /eat-drink/palate-restaurant/",
-      "detected_at": "2026-06-09T10:40:05.990527+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/",
-      "detail": "Page updated: /eat-drink/amuse-bar-kitchen/chill-grill-sip-into-summer-promotion/",
-      "detected_at": "2026-06-09T10:40:04.999556+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/amuse-bar-kitchen/",
-      "detail": "Page updated: /eat-drink/amuse-bar-kitchen/",
-      "detected_at": "2026-06-09T10:40:04.079626+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/christmas-at-bowl-social/",
-      "detail": "Page updated: /eat-drink/bowl-and-social/christmas-at-bowl-social/",
-      "detected_at": "2026-06-09T10:40:03.121889+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/eat-drink/bowl-and-social/colouring-pages-for-kids/",
-      "detail": "Page updated: /eat-drink/bowl-and-social/colouring-pages-for-kids/",
-      "detected_at": "2026-06-09T10:40:02.159505+00:00"
     }
   ]
 }
