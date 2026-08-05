@@ -1,7 +1,28 @@
 {
-  "updated": "2026-08-04 21:00 UTC",
+  "updated": "2026-08-05 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9659/Hanoi-Heat",
+      "detail": "Page removed: /whats-on/content/22728/9659/Hanoi-Heat",
+      "detected_at": "2026-08-05T21:00:29.516568+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9589/Cash---Cars",
+      "detail": "Page removed: /whats-on/content/1352/9589/Cash---Cars",
+      "detected_at": "2026-08-05T21:00:26.236514+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9740/Home-of-Darts-at-SkyCity",
+      "detail": "New page added: /whats-on/content/1352/9740/Home-of-Darts-at-SkyCity",
+      "detected_at": "2026-08-05T21:00:26.221759+00:00"
+    },
     {
       "site": "queenstown",
       "type": "new_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger",
       "detail": "Page updated: /whats-on/content/19512/9502/Table-Trigger",
       "detected_at": "2026-06-09T10:40:18.891919+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower",
-      "detail": "Page updated: /whats-on/content/19512/9394/Cash-Tower",
-      "detected_at": "2026-06-09T10:40:17.979498+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays",
-      "detail": "Page updated: /whats-on/content/19512/8582/Super-Sundays",
-      "detected_at": "2026-06-09T10:40:17.073135+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
-      "detail": "Page updated: /whats-on/content/19512/9385/New-Zealand-Darts-Showdown",
-      "detected_at": "2026-06-09T10:40:16.175972+00:00"
     }
   ]
 }
