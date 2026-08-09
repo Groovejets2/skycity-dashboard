@@ -1,7 +1,56 @@
 {
-  "updated": "2026-08-06 21:00 UTC",
+  "updated": "2026-08-09 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9702/Blackjack-Tournament",
+      "detail": "Page removed: /whats-on/content/19512/9702/Blackjack-Tournament",
+      "detected_at": "2026-08-09T20:01:03.525484+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detail": "Page removed: /whats-on/content/20258/9427/Stampede-Wins-SkyCity-Spins",
+      "detected_at": "2026-08-09T20:01:02.889194+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "Page removed: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-08-09T20:01:02.867316+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-guardsman/watch-the-footy-grand-final/",
+      "detail": "Page removed: /eat-and-drink/the-guardsman/watch-the-footy-grand-final/",
+      "detected_at": "2026-08-09T20:00:59.920806+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-guardsman/melbourne-cup-luncheon/",
+      "detail": "Page removed: /eat-and-drink/the-guardsman/melbourne-cup-luncheon/",
+      "detected_at": "2026-08-09T20:00:59.905205+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-guardsman/ashes-breakfast-specials/",
+      "detail": "Page removed: /eat-and-drink/the-guardsman/ashes-breakfast-specials/",
+      "detected_at": "2026-08-09T20:00:59.889067+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-guardsman/20-curry-thursdays/",
+      "detail": "Page removed: /eat-and-drink/the-guardsman/20-curry-thursdays/",
+      "detected_at": "2026-08-09T20:00:59.870221+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1352,55 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
       "detail": "Page removed: /whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
       "detected_at": "2026-06-11T12:39:33.231679+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "content_changed",
-      "url": "https://www.skycityauckland.co.nz/offers/",
-      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
-      "detected_at": "2026-06-11T03:01:03.100632+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
-      "detail": "Page removed: /whats-on/content/1352/9563/SWEAT-WITH-PRIDE",
-      "detected_at": "2026-06-10T19:01:04.092609+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9635/School-Holiday-Getaway",
-      "detail": "New page added: /whats-on/content/1352/9635/School-Holiday-Getaway",
-      "detected_at": "2026-06-10T04:30:33.217389+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
-      "detail": "New page added: /whats-on/content/1352/9630/Matariki-Bingo----1-000-MUST-BE-WON-BINGO-EVENT-",
-      "detected_at": "2026-06-10T04:30:33.202523+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
-      "detail": "New page added: /whats-on/content/1352/9430/Burger-Hour",
-      "detected_at": "2026-06-10T04:30:33.186354+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands",
-      "detail": "Page updated: /whats-on/content/19512/9505/VIP-Thursday-Thousands",
-      "detected_at": "2026-06-09T10:40:19.809944+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "content_changed",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger",
-      "detail": "Page updated: /whats-on/content/19512/9502/Table-Trigger",
-      "detected_at": "2026-06-09T10:40:18.891919+00:00"
     }
   ]
 }
