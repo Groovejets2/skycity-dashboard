@@ -1,7 +1,21 @@
 {
-  "updated": "2026-08-09 21:01 UTC",
+  "updated": "2026-08-10 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
+      "detail": "Page removed: /whats-on/content/19512/7156/Thursday-Quiz-at-The-Local-Taphouse",
+      "detected_at": "2026-08-10T21:01:15.230823+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9793/OYSTER-FEST",
+      "detail": "New page added: /whats-on/content/22728/9793/OYSTER-FEST",
+      "detected_at": "2026-08-10T21:01:10.451626+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1387,20 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9642/Football-World-Cup",
       "detail": "New page added: /whats-on/content/1352/9642/Football-World-Cup",
       "detected_at": "2026-06-12T03:00:39.250312+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9638/Rick-Beato-Live",
-      "detail": "New page added: /whats-on/content/1352/9638/Rick-Beato-Live",
-      "detected_at": "2026-06-11T23:01:11.500069+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
-      "detail": "Page removed: /whats-on/content/1352/9485/Gary-Owen---No-Hard-Feelings-Tour",
-      "detected_at": "2026-06-11T12:39:33.231679+00:00"
     }
   ]
 }
