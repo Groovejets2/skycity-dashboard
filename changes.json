@@ -1,7 +1,28 @@
 {
-  "updated": "2026-08-10 21:01 UTC",
+  "updated": "2026-08-11 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Warm-up-Hour",
+      "detail": "New page added: /whats-on/content/20258/9427/Warm-up-Hour",
+      "detected_at": "2026-08-11T21:00:21.892218+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "New page added: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-08-11T21:00:21.875160+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9790/Heath-Franklin-s-Chopper---Comedy-Gold-20th-Anniversary-Tour",
+      "detail": "New page added: /whats-on/content/1352/9790/Heath-Franklin-s-Chopper---Comedy-Gold-20th-Anniversary-Tour",
+      "detected_at": "2026-08-11T21:00:14.862972+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1380,27 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9438/Northern-Mystics-Super-Shot",
       "detail": "Page removed: /whats-on/content/1352/9438/Northern-Mystics-Super-Shot",
       "detected_at": "2026-06-13T19:00:58.961713+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/1385/Comedy-Zone",
-      "detail": "Page removed: /whats-on/content/19512/1385/Comedy-Zone",
-      "detected_at": "2026-06-12T19:01:06.723451+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
-      "detail": "Page removed: /whats-on/content/1352/9597/Matariki-at-the-Sky-Tower",
-      "detected_at": "2026-06-12T19:01:00.519005+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9642/Football-World-Cup",
-      "detail": "New page added: /whats-on/content/1352/9642/Football-World-Cup",
-      "detected_at": "2026-06-12T03:00:39.250312+00:00"
     }
   ]
 }
