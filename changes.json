@@ -1,7 +1,77 @@
 {
-  "updated": "2026-08-19 21:00 UTC",
+  "updated": "2026-08-23 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/virtual-tour/",
+      "detail": "Page removed: /eat-drink/the-local-taphouse/virtual-tour/",
+      "detected_at": "2026-08-23T20:00:23.518774+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/group-bookings/",
+      "detail": "Page removed: /eat-drink/the-local-taphouse/group-bookings/",
+      "detected_at": "2026-08-23T20:00:23.499375+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9427/Warm-up-Hour",
+      "detail": "Page removed: /whats-on/content/20258/9427/Warm-up-Hour",
+      "detected_at": "2026-08-23T20:00:22.709760+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9425/Warm-Up-Hour",
+      "detail": "Page removed: /whats-on/content/20258/9425/Warm-Up-Hour",
+      "detected_at": "2026-08-23T20:00:22.693888+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9739/-1-Million-Sundays",
+      "detail": "Page removed: /whats-on/content/22728/9739/-1-Million-Sundays",
+      "detected_at": "2026-08-23T20:00:20.322487+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9849/Swipe---Win",
+      "detail": "New page added: /whats-on/content/22728/9849/Swipe---Win",
+      "detected_at": "2026-08-23T20:00:20.309450+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9846/Casino-Cup",
+      "detail": "New page added: /whats-on/content/22728/9846/Casino-Cup",
+      "detected_at": "2026-08-23T20:00:20.295658+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9842/Mid-Autumn-Festival-",
+      "detail": "New page added: /whats-on/content/22728/9842/Mid-Autumn-Festival-",
+      "detected_at": "2026-08-23T20:00:20.280330+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9795/Fathers-Day",
+      "detail": "Page removed: /whats-on/content/1352/9795/Fathers-Day",
+      "detected_at": "2026-08-23T20:00:15.569502+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9795/Fathers-Day-",
+      "detail": "New page added: /whats-on/content/1352/9795/Fathers-Day-",
+      "detected_at": "2026-08-23T20:00:15.554441+00:00"
+    },
     {
       "site": "auckland",
       "type": "new_page",
@@ -1331,76 +1401,6 @@
       "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-world-cup-games/",
       "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-world-cup-games/",
       "detected_at": "2026-06-21T20:01:10.068806+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/madame-hanoi/hanoi-heat/",
-      "detail": "Page removed: /eat-and-drink/madame-hanoi/hanoi-heat/",
-      "detected_at": "2026-06-21T20:01:10.056186+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
-      "detail": "New page added: /whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
-      "detected_at": "2026-06-21T20:01:10.043468+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
-      "detail": "New page added: /whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
-      "detected_at": "2026-06-21T20:01:10.027029+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
-      "detail": "New page added: /eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
-      "detected_at": "2026-06-21T20:01:10.013898+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
-      "detail": "New page added: /eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
-      "detected_at": "2026-06-21T20:01:09.999480+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
-      "detail": "New page added: /whats-on/content/19512/3120/Matariki-Kids--Colouring-Competition",
-      "detected_at": "2026-06-18T21:00:50.322816+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans",
-      "detail": "Page removed: /whats-on/content/1352/9239/Home-of-the-Super-Fans",
-      "detected_at": "2026-06-18T21:00:43.287193+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Super-Rugby-Grand-Final",
-      "detail": "New page added: /whats-on/content/1352/9239/Super-Rugby-Grand-Final",
-      "detected_at": "2026-06-18T21:00:43.262574+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
-      "detail": "New page added: /whats-on/content/19512/9647/Super-Rugby-Pacific-GRAND-FINAL-Watch-Party",
-      "detected_at": "2026-06-17T21:00:39.311469+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay-World-Cup---Live-at-The-District-Sports-Bar",
-      "detail": "New page added: /whats-on/content/22728/9670/Australia-v-Paraguay-World-Cup---Live-at-The-District-Sports-Bar",
-      "detected_at": "2026-06-17T21:00:35.159111+00:00"
     }
   ]
 }
