@@ -1,7 +1,42 @@
 {
-  "updated": "2026-08-26 21:00 UTC",
+  "updated": "2026-08-27 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9700/VIP-Mystery-Money",
+      "detail": "Page removed: /whats-on/content/19512/9700/VIP-Mystery-Money",
+      "detected_at": "2026-08-27T21:00:50.820653+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "removed_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9224/Jingo-Night",
+      "detail": "Page removed: /whats-on/content/20258/9224/Jingo-Night",
+      "detected_at": "2026-08-27T21:00:50.145525+00:00"
+    },
+    {
+      "site": "queenstown",
+      "type": "new_page",
+      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9869/Father-s-Day",
+      "detail": "New page added: /whats-on/content/20258/9869/Father-s-Day",
+      "detected_at": "2026-08-27T21:00:50.128289+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9573/High-Society-",
+      "detail": "Page removed: /whats-on/content/22728/9573/High-Society-",
+      "detected_at": "2026-08-27T21:00:46.592756+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/6015/Melbourne-Cup-After-Party",
+      "detail": "New page added: /whats-on/content/22728/6015/Melbourne-Cup-After-Party",
+      "detected_at": "2026-08-27T21:00:46.573767+00:00"
+    },
     {
       "site": "hamilton",
       "type": "new_page",
@@ -1366,41 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9362/Autumn-Poker-Tournaments",
       "detail": "Page removed: /whats-on/content/1352/9362/Autumn-Poker-Tournaments",
       "detected_at": "2026-06-28T20:00:51.944308+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9141/Adam-Ray",
-      "detail": "Page removed: /whats-on/content/1352/9141/Adam-Ray",
-      "detected_at": "2026-06-28T20:00:51.921919+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9505/VIP-Thursday-Thousands",
-      "detail": "Page removed: /whats-on/content/19512/9505/VIP-Thursday-Thousands",
-      "detected_at": "2026-06-25T21:00:19.806720+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "removed_page",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
-      "detail": "Page removed: /whats-on/content/20258/9560/Jingo-Night",
-      "detected_at": "2026-06-25T21:00:18.864184+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/hotels/hotels-by-skycity/",
-      "detail": "Page removed: /hotels/hotels-by-skycity/",
-      "detected_at": "2026-06-25T21:00:13.888855+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
-      "detail": "New page added: /whats-on/content/1352/9688/Chinese-Hypnotist-Hilarious-Comedy-Hypnosis-Show",
-      "detected_at": "2026-06-25T21:00:13.867889+00:00"
     }
   ]
 }
