@@ -1,7 +1,63 @@
 {
-  "updated": "2026-08-27 21:00 UTC",
+  "updated": "2026-08-30 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9701/Money-or-the-Bag",
+      "detail": "Page removed: /whats-on/content/19512/9701/Money-or-the-Bag",
+      "detected_at": "2026-08-30T20:01:07.353598+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7622/Winter-Cocktails",
+      "detail": "Page removed: /whats-on/content/19512/7622/Winter-Cocktails",
+      "detected_at": "2026-08-30T20:01:07.337375+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9765/Rewards-Members-T-Bone-Offer",
+      "detail": "Page removed: /whats-on/content/22728/9765/Rewards-Members-T-Bone-Offer",
+      "detected_at": "2026-08-30T20:01:04.109023+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9646/Fire---Feast",
+      "detail": "Page removed: /whats-on/content/22728/9646/Fire---Feast",
+      "detected_at": "2026-08-30T20:01:04.093568+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detail": "Page removed: /whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detected_at": "2026-08-30T20:01:04.076001+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9838/Next-Stop-SkyCity",
+      "detail": "Page removed: /whats-on/content/1352/9838/Next-Stop-SkyCity",
+      "detected_at": "2026-08-30T20:01:01.198996+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9797/SkyCity-Hotels-Flash-Sale",
+      "detail": "Page removed: /whats-on/content/1352/9797/SkyCity-Hotels-Flash-Sale",
+      "detected_at": "2026-08-30T20:01:01.184016+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9778/Sky-Tower--30-Offer",
+      "detail": "Page removed: /whats-on/content/1352/9778/Sky-Tower--30-Offer",
+      "detected_at": "2026-08-30T20:01:01.163742+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1345,62 +1401,6 @@
       "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
       "detail": "Page removed: /whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
       "detected_at": "2026-06-29T21:01:25.308907+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
-      "detail": "Page removed: /whats-on/content/22728/9666/Australia-v-USA---Soccer-World-Cup",
-      "detected_at": "2026-06-29T21:01:25.294815+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
-      "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-v-usa-soccer-world-cup/",
-      "detected_at": "2026-06-29T21:01:25.280236+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
-      "detail": "Page removed: /eat-and-drink/the-district/whats-on/australia-v-paraguay-soccer-world-cup/",
-      "detected_at": "2026-06-29T21:01:25.264052+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9680/Bars-and-casual-drinks-at-SkyCity",
-      "detail": "New page added: /whats-on/content/1352/9680/Bars-and-casual-drinks-at-SkyCity",
-      "detected_at": "2026-06-28T21:00:53.653704+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9502/Table-Trigger",
-      "detail": "Page removed: /whats-on/content/19512/9502/Table-Trigger",
-      "detected_at": "2026-06-28T20:01:01.591894+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9394/Cash-Tower",
-      "detail": "Page removed: /whats-on/content/19512/9394/Cash-Tower",
-      "detected_at": "2026-06-28T20:01:01.568437+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
-      "detail": "Page removed: /whats-on/content/1352/9462/Sky-Tower-Family-Weekender",
-      "detected_at": "2026-06-28T20:00:51.959454+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9362/Autumn-Poker-Tournaments",
-      "detail": "Page removed: /whats-on/content/1352/9362/Autumn-Poker-Tournaments",
-      "detected_at": "2026-06-28T20:00:51.944308+00:00"
     }
   ]
 }
