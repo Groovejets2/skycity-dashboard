@@ -1,7 +1,84 @@
 {
-  "updated": "2026-08-30 21:01 UTC",
+  "updated": "2026-08-31 21:01 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "hamilton",
+      "type": "removed_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5654/August-Burger-and-Milkshake-of-the-Month",
+      "detail": "Page removed: /whats-on/content/19512/5654/August-Burger-and-Milkshake-of-the-Month",
+      "detected_at": "2026-08-31T21:01:14.675092+00:00"
+    },
+    {
+      "site": "hamilton",
+      "type": "new_page",
+      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5653/September-Burger-and-Side-of-the-Month",
+      "detail": "New page added: /whats-on/content/19512/5653/September-Burger-and-Side-of-the-Month",
+      "detected_at": "2026-08-31T21:01:14.658913+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9836/The-Killer-Queen-Experience",
+      "detail": "New page added: /whats-on/content/22728/9836/The-Killer-Queen-Experience",
+      "detected_at": "2026-08-31T21:01:10.560492+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9765/Rewards-Members-Lobster-Offer",
+      "detail": "New page added: /whats-on/content/22728/9765/Rewards-Members-Lobster-Offer",
+      "detected_at": "2026-08-31T21:01:10.547187+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detail": "New page added: /whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detected_at": "2026-08-31T21:01:10.531066+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9740/Home-of-Darts-at-SkyCity",
+      "detail": "Page removed: /whats-on/content/1352/9740/Home-of-Darts-at-SkyCity",
+      "detected_at": "2026-08-31T21:01:05.785650+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9732/Restaurant-Month",
+      "detail": "Page removed: /whats-on/content/1352/9732/Restaurant-Month",
+      "detected_at": "2026-08-31T21:01:05.767457+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9519/Winter-Escapes",
+      "detail": "Page removed: /whats-on/content/1352/9519/Winter-Escapes",
+      "detected_at": "2026-08-31T21:01:05.754051+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9370/-9-90-Meal-Deals-for-SHOW-by-SkyCity-Members",
+      "detail": "Page removed: /whats-on/content/1352/9370/-9-90-Meal-Deals-for-SHOW-by-SkyCity-Members",
+      "detected_at": "2026-08-31T21:01:05.740428+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/6656/Free-Car-Parking-",
+      "detail": "Page removed: /whats-on/content/1352/6656/Free-Car-Parking-",
+      "detected_at": "2026-08-31T21:01:05.719110+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "offers_updated",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-08-31T21:01:03.762175+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1324,83 +1401,6 @@
       "url": "https://skycityauckland.co.nz/discover-your-style/",
       "detail": "Page removed: /discover-your-style/",
       "detected_at": "2026-06-30T21:01:10.933635+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "new_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Home-of-the-Super-Fans",
-      "detail": "New page added: /whats-on/content/1352/9239/Home-of-the-Super-Fans",
-      "detected_at": "2026-06-30T21:01:10.916872+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/8582/Super-Sundays",
-      "detail": "Page removed: /whats-on/content/19512/8582/Super-Sundays",
-      "detected_at": "2026-06-29T21:01:45.790846+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Weekend-Happy-Hours",
-      "detail": "Page removed: /whats-on/content/19512/7159/Weekend-Happy-Hours",
-      "detected_at": "2026-06-29T21:01:45.778218+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "removed_page",
-      "url": "https://skycityhamilton.co.nz/eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
-      "detail": "Page removed: /eat-drink/the-local-taphouse/the-local-taphouse-urban-wine-walk-giveaway/",
-      "detected_at": "2026-06-29T21:01:45.765410+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9703/-20-Sunday-Roast",
-      "detail": "New page added: /whats-on/content/19512/9703/-20-Sunday-Roast",
-      "detected_at": "2026-06-29T21:01:45.752701+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9702/Blackjack-Tournament",
-      "detail": "New page added: /whats-on/content/19512/9702/Blackjack-Tournament",
-      "detected_at": "2026-06-29T21:01:45.740111+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9701/Money-or-the-Bag",
-      "detail": "New page added: /whats-on/content/19512/9701/Money-or-the-Bag",
-      "detected_at": "2026-06-29T21:01:45.726402+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/9700/VIP-Mystery-Money",
-      "detail": "New page added: /whats-on/content/19512/9700/VIP-Mystery-Money",
-      "detected_at": "2026-06-29T21:01:45.712637+00:00"
-    },
-    {
-      "site": "hamilton",
-      "type": "new_page",
-      "url": "https://skycityhamilton.co.nz/whats-on/content/19512/7159/Saturday-Happy-Hours",
-      "detail": "New page added: /whats-on/content/19512/7159/Saturday-Happy-Hours",
-      "detected_at": "2026-06-29T21:01:45.697095+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "new_page",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9708/Pizza---Pour-Wednesdays-",
-      "detail": "New page added: /whats-on/content/20258/9708/Pizza---Pour-Wednesdays-",
-      "detected_at": "2026-06-29T21:01:38.526262+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
-      "detail": "Page removed: /whats-on/content/22728/9670/Australia-v-Paraguay---Soccer-World-Cup",
-      "detected_at": "2026-06-29T21:01:25.308907+00:00"
     }
   ]
 }
