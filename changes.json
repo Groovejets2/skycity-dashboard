@@ -1,7 +1,35 @@
 {
-  "updated": "2026-08-31 21:01 UTC",
+  "updated": "2026-09-01 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detail": "Page removed: /whats-on/content/22728/8435/Rewards-Members-Exclusive-Dining",
+      "detected_at": "2026-09-01T21:00:24.482953+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8435/September-Rewards-Members-Menu",
+      "detail": "New page added: /whats-on/content/22728/8435/September-Rewards-Members-Menu",
+      "detected_at": "2026-09-01T21:00:24.469204+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/killer-queen-experience-at-the-district/",
+      "detail": "New page added: /eat-and-drink/the-district/whats-on/killer-queen-experience-at-the-district/",
+      "detected_at": "2026-09-01T21:00:24.454620+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9876/Oh-What-A-Night---Tribute-to-Frankie-Valli---The-4-Seasons",
+      "detail": "New page added: /whats-on/content/1352/9876/Oh-What-A-Night---Tribute-to-Frankie-Valli---The-4-Seasons",
+      "detected_at": "2026-09-01T21:00:18.429317+00:00"
+    },
     {
       "site": "hamilton",
       "type": "removed_page",
@@ -1373,34 +1401,6 @@
       "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
       "detail": "Page removed: /whats-on/content/1352/9430/Burger-Hour",
       "detected_at": "2026-06-30T21:01:10.988153+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9239/Super-Rugby-Grand-Final",
-      "detail": "Page removed: /whats-on/content/1352/9239/Super-Rugby-Grand-Final",
-      "detected_at": "2026-06-30T21:01:10.972301+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/lunar-new-year/",
-      "detail": "Page removed: /lunar-new-year/",
-      "detected_at": "2026-06-30T21:01:10.959757+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/join-our-team/",
-      "detail": "Page removed: /join-our-team/",
-      "detected_at": "2026-06-30T21:01:10.947058+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/discover-your-style/",
-      "detail": "Page removed: /discover-your-style/",
-      "detected_at": "2026-06-30T21:01:10.933635+00:00"
     }
   ]
 }
