@@ -1,7 +1,70 @@
 {
-  "updated": "2026-09-01 21:00 UTC",
+  "updated": "2026-09-02 21:00 UTC",
   "total": 200,
   "changes": [
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-t-bone-offer/",
+      "detail": "Page removed: /eat-and-drink/central-cafe/rewards-members-t-bone-offer/",
+      "detected_at": "2026-09-02T21:00:23.218431+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "removed_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-exclusive-dining/",
+      "detail": "Page removed: /eat-and-drink/central-cafe/rewards-members-exclusive-dining/",
+      "detected_at": "2026-09-02T21:00:23.194466+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-offer/",
+      "detail": "New page added: /eat-and-drink/central-cafe/rewards-members-offer/",
+      "detected_at": "2026-09-02T21:00:23.182186+00:00"
+    },
+    {
+      "site": "adelaide",
+      "type": "new_page",
+      "url": "https://skycityadelaide.com.au/eat-and-drink/central-cafe/rewards-members-menu/",
+      "detail": "New page added: /eat-and-drink/central-cafe/rewards-members-menu/",
+      "detected_at": "2026-09-02T21:00:23.157546+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "poker_detected",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/6645/SkyCity-Poker-Room",
+      "detail": "\ud83c\udfb2 Poker: poker \u2014 /whats-on/content/1352/6645/SkyCity-Poker-Room",
+      "detected_at": "2026-09-02T21:00:19.546543+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "removed_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/6645/POKER",
+      "detail": "Page removed: /whats-on/content/1352/6645/POKER",
+      "detected_at": "2026-09-02T21:00:19.541550+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/whats-on/content/1352/6645/SkyCity-Poker-Room",
+      "detail": "New page added: /whats-on/content/1352/6645/SkyCity-Poker-Room",
+      "detected_at": "2026-09-02T21:00:19.536611+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "new_page",
+      "url": "https://skycityauckland.co.nz/next-stop-skycity/",
+      "detail": "New page added: /next-stop-skycity/",
+      "detected_at": "2026-09-02T21:00:19.530290+00:00"
+    },
+    {
+      "site": "auckland",
+      "type": "offers_updated",
+      "url": "https://www.skycityauckland.co.nz/offers/",
+      "detail": "[Offers page](https://www.skycityauckland.co.nz/offers/)",
+      "detected_at": "2026-09-02T21:00:17.653491+00:00"
+    },
     {
       "site": "adelaide",
       "type": "removed_page",
@@ -1338,69 +1401,6 @@
       "url": "https://skycityhamilton.co.nz/whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
       "detail": "New page added: /whats-on/content/19512/5654/July-Burger-and-Side-of-the-Month",
       "detected_at": "2026-06-30T21:01:22.480798+00:00"
-    },
-    {
-      "site": "queenstown",
-      "type": "new_page",
-      "url": "https://skycityqueenstown.co.nz/whats-on/content/20258/9560/Jingo-Night",
-      "detail": "New page added: /whats-on/content/20258/9560/Jingo-Night",
-      "detected_at": "2026-06-30T21:01:19.994226+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detail": "Page removed: /whats-on/content/22728/9518/The-Tomahawk-Experience",
-      "detected_at": "2026-06-30T21:01:16.375797+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "removed_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detail": "Page removed: /whats-on/content/22728/8438/SkyCity-Rewards-Snackables-",
-      "detected_at": "2026-06-30T21:01:16.363277+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
-      "detail": "New page added: /whats-on/content/22728/9709/England-v-DR-Congo----Soccer-World-Cup",
-      "detected_at": "2026-06-30T21:01:16.350649+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
-      "detail": "New page added: /whats-on/content/22728/9692/Australia-v-Egypt---Soccer-World-Cup",
-      "detected_at": "2026-06-30T21:01:16.338107+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
-      "detail": "New page added: /eat-and-drink/the-district/whats-on/england-v-dr-congo-soccer-world-cup/",
-      "detected_at": "2026-06-30T21:01:16.324832+00:00"
-    },
-    {
-      "site": "adelaide",
-      "type": "new_page",
-      "url": "https://skycityadelaide.com.au/eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
-      "detail": "New page added: /eat-and-drink/the-district/whats-on/australia-v-egypt-soccer-world-cup/",
-      "detected_at": "2026-06-30T21:01:16.309729+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9596/Matariki-at-SkyCity",
-      "detail": "Page removed: /whats-on/content/1352/9596/Matariki-at-SkyCity",
-      "detected_at": "2026-06-30T21:01:11.000930+00:00"
-    },
-    {
-      "site": "auckland",
-      "type": "removed_page",
-      "url": "https://skycityauckland.co.nz/whats-on/content/1352/9430/Burger-Hour",
-      "detail": "Page removed: /whats-on/content/1352/9430/Burger-Hour",
-      "detected_at": "2026-06-30T21:01:10.988153+00:00"
     }
   ]
 }
